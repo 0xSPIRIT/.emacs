@@ -1,0 +1,47 @@
+;; Object semanticdb-project-database-file-23a6a10
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-23a6a10"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-276ede4"
+      :file "body.h"
+      :fsize 385
+      :lastmodtime '(24502 41048 0 0))
+    (semanticdb-table "semanticdb-table-276ee08"
+      :file "player.h"
+      :fsize 481
+      :lastmodtime '(24502 41068 0 0))
+    (semanticdb-table "semanticdb-table-232b7ac"
+      :major-mode c-mode
+      :tags 
+        '( ("SDL_MAIN_HANDLED" variable (:constant-flag t) nil [9 25])
+            ("SDL2/SDL.h" include (:system-flag t) nil [26 47])
+            ("stdio.h" include (:system-flag t) nil [49 67])
+            ("stdbool.h" include (:system-flag t) nil [68 88])
+            ("body.h" include nil nil [90 107])
+            ("player.h" include nil nil [108 127])
+            ("screen_width" variable
+               (:default-value "320"
+                :type "int")
+                nil [129 193])
+            ("screen_height" variable
+               (:default-value "240"
+                :type "int")
+                nil [129 193])
+            ("screen_scale" variable
+               (:default-value "4"
+                :type "int")
+                nil [129 193])
+            ("main" function (:type "int") nil [195 1784]))          
+      :file "main.c"
+      :pointmax 1785
+      :fsize 1860
+      :lastmodtime '(24609 13700 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("SDL_MAIN_HANDLED")
+          )
+))
+  :file "!drive_d!C_Programs!moon!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

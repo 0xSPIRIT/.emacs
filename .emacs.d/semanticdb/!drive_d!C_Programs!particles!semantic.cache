@@ -1,0 +1,116 @@
+;; Object semanticdb-project-database-file-2467c40
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-2467c40"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-247ea00"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("stdbool.h" include (:system-flag t) nil [40 60])
+            ("time.h" include (:system-flag t) nil [61 78])
+            ("SDL_MAIN_HANDLED" variable (:constant-flag t) nil [88 104])
+            ("SDL2/SDL.h" include (:system-flag t) nil [105 126])
+            ("draw.h" include nil nil [128 145])
+            ("particle_count" variable (:constant-flag t) nil [155 169])
+            ("BIG_G" variable (:constant-flag t) nil [183 188])
+            ("window_width" variable (:constant-flag t) nil [206 218])
+            ("window_height" variable (:constant-flag t) nil [232 245])
+            ("real" type
+               (:typedef ("double")
+                :type "typedef")
+                nil [251 271])
+            ("TIMESTEP_MAX" variable
+               (:constant-flag t
+                :default-value "0.2"
+                :type ("real" type (:type "class") nil nil))
+                nil [273 303])
+            ("TIMESTEP" variable
+               (:default-value "TIMESTEP_MAX"
+                :type ("real" type (:type "class") nil nil))
+                nil [304 333])
+            ("repititions_per_tick" variable
+               (:default-value "1"
+                :type "int")
+                nil [335 364])
+            ("efficiency" variable
+               (:constant-flag t
+                :default-value "0.9f"
+                :type "float")
+                nil [366 396])
+            ("particle_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("x" variable (:type ("real" type (:type "class") nil nil)) (reparse-symbol classsubparts) [419 486])
+                          ("y" variable (:type ("real" type (:type "class") nil nil)) (reparse-symbol classsubparts) [419 486])
+                          ("vx" variable (:type ("real" type (:type "class") nil nil)) (reparse-symbol classsubparts) [419 486])
+                          ("vy" variable (:type ("real" type (:type "class") nil nil)) (reparse-symbol classsubparts) [419 486])
+                          ("ax" variable (:type ("real" type (:type "class") nil nil)) (reparse-symbol classsubparts) [419 486])
+                          ("ay" variable (:type ("real" type (:type "class") nil nil)) (reparse-symbol classsubparts) [419 486])
+                          ("mass" variable (:type ("real" type (:type "class") nil nil)) (reparse-symbol classsubparts) [419 486])
+                          ("radius" variable (:type ("real" type (:type "class") nil nil)) (reparse-symbol classsubparts) [419 486]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [398 500])
+            ("particles" variable
+               (:dereference 1
+                :type ("particle_t" type (:type "class") nil nil))
+                nil [502 539])
+            ("cam_x" variable
+               (:default-value "0"
+                :type "int")
+                nil [541 555])
+            ("cam_y" variable
+               (:default-value "0"
+                :type "int")
+                nil [556 570])
+            ("particle_overlap" function
+               (:arguments 
+                  ( ("x1" variable (:type ("real" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [594 602])
+                    ("y1" variable (:type ("real" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [603 611])
+                    ("r1" variable (:type ("real" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [612 620])
+                    ("x2" variable (:type ("real" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [621 629])
+                    ("y2" variable (:type ("real" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [630 638])
+                    ("r2" variable (:type ("real" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [639 647]))                  
+                :type "bool")
+                nil [572 752])
+            ("main" function (:type "int") nil [754 6430]))          
+      :file "main.c"
+      :pointmax 6431
+      :fsize 6624
+      :lastmodtime '(24698 16184 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("window_height" . ((number "720" 246 . 249)))
+          ("BIG_G" . ((number "50.0" 192 . 196)))
+          ("window_width" . ((number "1280" 219 . 223)))
+          ("particle_count" . ((number "100" 170 . 173)))
+          ("SDL_MAIN_HANDLED")
+          )
+)
+    (semanticdb-table "semanticdb-table-247b768"
+      :major-mode c-mode
+      :tags 
+        '( ("SDL2/SDL.h" include (:system-flag t) nil [1 22])
+            ("math.h" include (:system-flag t) nil [24 41])
+            ("draw_circle" function
+               (:arguments 
+                  ( ("renderer" variable
+                       (:pointer 1
+                        :type ("SDL_Renderer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [60 83])
+                    ("x" variable (:type "float") (reparse-symbol arg-sub-list) [84 92])
+                    ("y" variable (:type "float") (reparse-symbol arg-sub-list) [93 101])
+                    ("radius" variable (:type "int") (reparse-symbol arg-sub-list) [102 113]))                  
+                :type "void")
+                nil [43 646]))          
+      :file "draw.h"
+      :pointmax 647
+      :fsize 681
+      :lastmodtime '(24686 27731 0 0)
+      :unmatched-syntax nil))
+  :file "!drive_d!C_Programs!particles!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

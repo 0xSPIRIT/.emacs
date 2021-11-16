@@ -1,0 +1,44 @@
+;; Emacs-W3 HTTP cookies file
+;; Automatically generated file!!! DO NOT EDIT!!!
+
+(setq url-cookie-storage
+ '((".google.com"
+  [url-cookie "NID" "206=VCY9Qi2oY_6xb--YnyDvvUie8YdHVoUdegmPJbhOkK8U8DWrc0d5S5-WjpU7_ywZITtABQmR_EhR7bEMzDXbHKOiGRqCLrzBqcuYHHu14oL7C3V-NrDiLINu6MoU3rfA73tshPRbNHvVMttx6shPtv5Kreso76ifr07OpBiWOSY" "Mon, 05-Jul-2021 06:57:42 GMT" "/" ".google.com" nil]
+  [url-cookie "CGIC" "Ik10ZXh0L2h0bWwsIHRleHQvcGxhaW4sIHRleHQvc2dtbCwgdGV4dC9jc3MsIGFwcGxpY2F0aW9uL3hodG1sK3htbCwgKi8qO3E9MC4wMQ" "Fri, 02-Jul-2021 06:57:51 GMT" "/complete/search" ".google.com" nil]
+  [url-cookie "CGIC" "Ik10ZXh0L2h0bWwsIHRleHQvcGxhaW4sIHRleHQvc2dtbCwgdGV4dC9jc3MsIGFwcGxpY2F0aW9uL3hodG1sK3htbCwgKi8qO3E9MC4wMQ" "Fri, 02-Jul-2021 06:57:51 GMT" "/search" ".google.com" nil])
+ (".google.tt"
+  [url-cookie "NID" "211=WcG3WXJyw9pOW5Ae_K6w9LTHWs8VBe5Qlv79zSzcHuQpQ4NQRMR-sCNbbv7nC7csNCnkuzCkxcRvW3pixBE0tRPu0Z1Gf1GHjAXZQ4cB077-uZaNyoO3X0FR2h0raDWZglXrs6zPLFNH_eIrABg02TMaJUDZ42pt9wDvSDSH6Ms" "Sun, 12-Sep-2021 16:20:34 GMT" "/" ".google.tt" nil]
+  [url-cookie "CGIC" "Ik10ZXh0L2h0bWwsIHRleHQvcGxhaW4sIHRleHQvc2dtbCwgdGV4dC9jc3MsIGFwcGxpY2F0aW9uL3hodG1sK3htbCwgKi8qO3E9MC4wMQ" "Thu, 09-Sep-2021 16:20:34 GMT" "/complete/search" ".google.tt" nil]
+  [url-cookie "CGIC" "Ik10ZXh0L2h0bWwsIHRleHQvcGxhaW4sIHRleHQvc2dtbCwgdGV4dC9jc3MsIGFwcGxpY2F0aW9uL3hodG1sK3htbCwgKi8qO3E9MC4wMQ" "Thu, 09-Sep-2021 16:20:34 GMT" "/search" ".google.tt" nil])
+ (".xvideos.com"
+  [url-cookie "cit" "09a69dcfd0111ee4MJk3ogz7J8RSgNGDEHLiFA%3D%3D" "Fri Jun 11 16:21:10 2021 GMT" "/" ".xvideos.com" nil])
+ ("pornhub.com"
+  [url-cookie "ss" "276697888756774701" "Sun Mar 13 16:17:56 2022 GMT" "/" "pornhub.com" nil]
+  [url-cookie "platform_cookie_reset" "pc" "Mon Apr 12 16:17:56 2021 GMT" "/" "pornhub.com" nil]))
+)
+(setq url-cookie-secure-storage
+ '(("en.wikipedia.org"
+  [url-cookie "WMF-Last-Access" "12-Mar-2021" "Tue, 13 Apr 2021 00:00:00 GMT" "/" "en.wikipedia.org" t])
+ ("github.com"
+  [url-cookie "logged_in" "no" "Sun, 20 Mar 2022 21:49:02 GMT" "/" "github.com" t]
+  [url-cookie "_octo" "GH1.1.930649059.1616276942" "Sun, 20 Mar 2022 21:49:02 GMT" "/" "github.com" t])
+ ("pornhub.com"
+  [url-cookie "bs" "wrruorgi8d23con4j2plvspv04g6n3f2" "Tue Mar 11 16:17:56 2031 GMT" "/" "pornhub.com" t])
+ (".wikipedia.org"
+  [url-cookie "WMF-Last-Access-Global" "12-Mar-2021" "Tue, 13 Apr 2021 00:00:00 GMT" "/" ".wikipedia.org" t])
+ ("wikipedia.org"
+  [url-cookie "WMF-Last-Access" "12-Mar-2021" "Tue, 13 Apr 2021 00:00:00 GMT" "/" "wikipedia.org" t])
+ (".google.com"
+  [url-cookie "1P_JAR" "2021-03-25-03" "Sat, 24-Apr-2021 03:11:50 GMT" "/" ".google.com" t])
+ (".google.tt"
+  [url-cookie "1P_JAR" "2021-03-13-16" "Mon, 12-Apr-2021 16:20:34 GMT" "/" ".google.tt" t])
+ (".xvideos.com"
+  [url-cookie "session_token" "70ca8470f3322883qHgmOMaelfz5xw0Sf0Lr2VUHOiMn5k9RlvVoiUn_eWR6u0TSUb8E-ykvY8r18bvFh29H44AEiQRJpE3azsexPdlEV379Mbq176anDQFH6XmBVbVwMBT9BcqYlDH061E_dSwBtHz9y9XUTZuYjla0oEq2etY8tEyfd_5U_9QGtccVTxk-kGh2AaiQTrMGJfK52OeMxkSig8VbUqPLJ2yG9w%3D%3D" "Mon Apr 12 16:21:10 2021 GMT" "/" ".xvideos.com" t])
+ (".youtube.com"
+  [url-cookie "VISITOR_INFO1_LIVE" "Z6M4BhVXV-o" "Fri, 02-Jul-2021 07:00:30 GMT" "/" ".youtube.com" t]))
+)
+
+;; Local Variables:
+;; version-control: never
+;; no-byte-compile: t
+;; End:

@@ -1,0 +1,20 @@
+;; Object semanticdb-project-database-file-26057d4
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-26057d4"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-2390b7c"
+      :major-mode c-mode
+      :tags nil
+      :file "main.c"
+      :pointmax 2853
+      :fsize 2974
+      :lastmodtime '(24707 36393 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-2390b9c"
+      :file "chip8.h"
+      :fsize 9759
+      :lastmodtime '(24699 3030 0 0)))
+  :file "!drive_d!C_Programs!CHIP-8!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

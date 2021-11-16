@@ -1,0 +1,77 @@
+;; Object semanticdb-project-database-file-19b9438
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-19b9438"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-19ba35c"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("MEMORY_SIZE" variable (:constant-flag t) nil [69 80])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("MEMORY_SIZE" variable (:constant-flag t) nil [69 80])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("string.h" include (:system-flag t) nil [40 59])
+            ("MEMORY_SIZE" variable (:constant-flag t) nil [69 80])
+            ("W" variable (:constant-flag t) nil [95 96])
+            ("H" variable (:constant-flag t) nil [109 110])
+            ("u8" type
+               (:typedef ("unsigned char")
+                :type "typedef")
+                nil [116 141])
+            ("u16" type
+               (:typedef ("unsigned short")
+                :type "typedef")
+                nil [142 169])
+            ("memory" variable
+               (:dereference 1
+                :type ("u8" type (:type "class") nil nil))
+                nil [171 194])
+            ("pc" variable (:type ("u16" type (:type "class") nil nil)) nil [195 202])
+            ("opcode" variable (:type ("u16" type (:type "class") nil nil)) nil [203 214])
+            ("graphics" variable
+               (:dereference 1
+                :type ("u8" type (:type "class") nil nil))
+                nil [216 233])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [244 253])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [254 266]))                  
+                :type "int")
+                nil [235 308]))          
+      :file "scratch.c"
+      :pointmax 309
+      :fsize 329
+      :lastmodtime '(24698 17014 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("MEMORY_SIZE" . ((number "4096" 81 . 85)))
+          ("H" . ((number "360" 71 . 74)))
+          ("W" . ((number "640" 57 . 60)))
+          )
+)
+    (semanticdb-table "semanticdb-table-28bde84"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [50 59])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [60 72]))                  
+                :type "int")
+                nil [41 121]))          
+      :file "scratch_stuff.c"
+      :pointmax 122
+      :fsize 128
+      :lastmodtime '(24698 16864 0 0)
+      :unmatched-syntax nil))
+  :file "!drive_c!Users!ameer!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

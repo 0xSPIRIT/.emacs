@@ -1,0 +1,202 @@
+;; Object semanticdb-project-database-file-375189c
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-375189c"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-37518c4"
+      :major-mode c++-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [470 488])
+            ("glut.h" include (:system-flag t) nil [489 506])
+            ("chip8.h" include nil nil [507 525])
+            ("SCREEN_WIDTH" variable (:constant-flag t) nil [551 563])
+            ("SCREEN_HEIGHT" variable (:constant-flag t) nil [575 588])
+            ("myChip8" variable (:type ("chip8" type (:type "class") nil nil)) nil [593 607])
+            ("modifier" variable
+               (:default-value "10"
+                :type "int")
+                nil [608 626])
+            ("display_width" variable
+               (:default-value "SCREEN_WIDTH * modifier"
+                :type "int")
+                nil [643 687])
+            ("display_height" variable
+               (:default-value "SCREEN_HEIGHT * modifier"
+                :type "int")
+                nil [688 734])
+            ("display" function
+               (:prototype-flag t
+                :type "void")
+                nil [736 751])
+            ("reshape_window" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("w" variable (:type ("GLsizei" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [772 782])
+                    ("h" variable (:type ("GLsizei" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [783 793]))                  
+                :type "void")
+                nil [752 794])
+            ("keyboardUp" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("key" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [811 829])
+                    ("x" variable (:type "int") (reparse-symbol arg-sub-list) [830 836])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [837 843]))                  
+                :type "void")
+                nil [795 844])
+            ("keyboardDown" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("key" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [863 881])
+                    ("x" variable (:type "int") (reparse-symbol arg-sub-list) [882 888])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [889 895]))                  
+                :type "void")
+                nil [845 896])
+            ("DRAWWITHTEXTURE" variable (:constant-flag t) nil [932 947])
+            ("u8" variable (:type ((((0) "__int8")) type (:superclasses ("unsigned int") :type "typedef") nil nil)) nil [948 975])
+            ("screenData" variable
+               (:dereference 3
+                :type ("u8" type (:type "class") nil nil))
+                nil [976 1022])
+            ("setupTexture" function
+               (:prototype-flag t
+                :type "void")
+                nil [1024 1044])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1055 1064])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1065 1077]))                  
+                :type "int")
+                nil [1046 1726])
+            ("setupTexture" function (:type "void") nil [1745 2409])
+            ("updateTexture" function
+               (:arguments 
+                  ( ("c8" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("chip8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2430 2446]))                  
+                :type "void")
+                nil [2411 3163])
+            ("drawPixel" function
+               (:arguments 
+                  ( ("x" variable (:type "int") (reparse-symbol arg-sub-list) [3196 3202])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [3203 3209]))                  
+                :type "void")
+                nil [3181 3533])
+            ("updateQuads" function
+               (:arguments 
+                  ( ("c8" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("chip8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3552 3568]))                  
+                :type "void")
+                nil [3535 3777])
+            ("display" function (:type "void") nil [3779 4103])
+            ("reshape_window" function
+               (:arguments 
+                  ( ("w" variable (:type ("GLsizei" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4125 4135])
+                    ("h" variable (:type ("GLsizei" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4136 4146]))                  
+                :type "void")
+                nil [4105 4395])
+            ("keyboardDown" function
+               (:arguments 
+                  ( ("key" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [4415 4433])
+                    ("x" variable (:type "int") (reparse-symbol arg-sub-list) [4434 4440])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [4441 4447]))                  
+                :type "void")
+                nil [4397 5210])
+            ("keyboardUp" function
+               (:arguments 
+                  ( ("key" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [5228 5246])
+                    ("x" variable (:type "int") (reparse-symbol arg-sub-list) [5247 5253])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [5254 5260]))                  
+                :type "void")
+                nil [5212 5951]))          
+      :file "main.cpp"
+      :pointmax 5952
+      :fsize 6181
+      :lastmodtime '(19863 11116 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("SCREEN_WIDTH" . ((number "64" 564 . 566)))
+          ("SCREEN_HEIGHT" . ((number "32" 589 . 591)))
+          ("DRAWWITHTEXTURE")
+          )
+)
+    (semanticdb-table "semanticdb-table-24890b0"
+      :major-mode c++-mode
+      :tags 
+        '( ("chip8.h" include nil nil [470 488])
+            ("stdio.h" include (:system-flag t) nil [489 507])
+            ("stdlib.h" include (:system-flag t) nil [508 527])
+            ("time.h" include (:system-flag t) nil [528 545])
+            ("chip8_fontset" variable
+               (:dereference 1
+                :default-value "{ 
+        0xF0, 0x90, 0x90, 0x90, 0xF0, //0
+        0x20, 0x60, 0x20, 0x20, 0x70, //1
+        0xF0, 0x10, 0xF0, 0x80, 0xF0, //2
+        0xF0, 0x10, 0xF0, 0x10, 0xF0, //3
+        0x90, 0x90, 0xF0, 0x10, 0x10, //4
+        0xF0, 0x80, 0xF0, 0x10, 0xF0, //5
+        0xF0, 0x80, 0xF0, 0x90, 0xF0, //6
+        0xF0, 0x10, 0x20, 0x40, 0x40, //7
+        0xF0, 0x90, 0xF0, 0x90, 0xF0, //8
+        0xF0, 0x90, 0xF0, 0x10, 0xF0, //9
+        0xF0, 0x90, 0xF0, 0x90, 0x90, //A
+        0xE0, 0x90, 0xE0, 0x90, 0xE0, //B
+        0xF0, 0x80, 0x80, 0x80, 0xF0, //C
+        0xE0, 0x90, 0x90, 0x90, 0xE0, //D
+        0xF0, 0x80, 0xF0, 0x80, 0xF0, //E
+        0xF0, 0x80, 0xF0, 0x80, 0x80  //F
+    }"
+                :type "unsigned char")
+                nil [547 1266])
+            ("chip8" function
+               (:constructor-flag t
+                :parent "chip8"
+                :type ("chip8" type (:type "class") nil nil))
+                nil [1268 1299])
+            ("chip8" function
+               (:destructor-flag t
+                :parent "chip8"
+                :type "void")
+                nil [1301 1333])
+            ("init" function
+               (:parent "chip8"
+                :type "void")
+                nil [1335 2073])
+            ("emulateCycle" function
+               (:parent "chip8"
+                :type "void")
+                nil [2075 14309])
+            ("debugRender" function
+               (:parent "chip8"
+                :type "void")
+                nil [14311 14628])
+            ("loadApplication" function
+               (:parent "chip8"
+                :arguments 
+                  ( ("filename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [14658 14680]))                  
+                :type "bool")
+                nil [14630 15750]))          
+      :file "chip8.cpp"
+      :pointmax 15751
+      :fsize 16214
+      :lastmodtime '(24698 6176 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-3a85b08"
+      :file "chip8.h"
+      :fsize 1228
+      :lastmodtime '(19853 344 0 0)))
+  :file "!drive_d!Downloads!myChip8-bin-src!myChip8-bin-src!sourcecode!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

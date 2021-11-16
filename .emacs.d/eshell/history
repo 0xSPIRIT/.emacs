@@ -1,0 +1,128 @@
+ls
+del main.exe
+rmdir /s quickstart
+del quickstart
+rm quickstart
+rmdir quickstart
+clera
+clear
+ls
+del main.exe
+rm main.exe
+ls
+pub
+dart main.dart 
+a
+a mandelbrot.b 
+cls
+clear
+a mandelbrot.b
+a helloword.bf 
+a helloword.bf 
+tcc
+tcc *.c
+a
+clear
+clear
+clear
+clear
+tcc *.c -ansi
+tcc *.c -std=c89
+tcc *.c -std=c89
+tcc *.c
+tcc
+tcc *.c -ID:\include\ -LD:\lib -llibSDL2.a
+tcc *.c -ID:\include\ -LD:\lib -llibSDL2
+exit
+tcc ex3.
+tcc ex3.c
+a
+./a
+./a.exe
+exit
+ex3
+ex3 5
+ex3 10
+ex3 2
+type gamer.temp
+more gamer.temp
+a
+a
+dir
+ls
+es
+cd examples
+ls
+cd ..
+es examples/helloworld.es
+es examples/calc.es
+es examples/calc.es
+emacs
+more
+type 
+es examples/fileprint.es
+exit
+vim
+a
+./a.exe
+./a.exe
+./a
+a
+./a
+a
+a
+clear
+a
+clear
+a
+clear
+a
+clear
+a
+git add .
+git commit -m "Removed some unnecessary files, and fixed some random stuff I can't remember."
+git push
+a
+gcc --version
+gcc --version
+gcc --version
+git init
+git add .
+git commit -m "Initial Commit: fully functioning 3D projection, shaders, lighting, and first person camera. Working on getting a model to load."
+git remote add origin https://github.com/CorkScrewer/FSPC.git
+git push -u origin master
+rm .vscode
+rmdir .vscode
+rmdir /s .vscode
+rmdir -s .vscode
+del .vscode
+git add .
+git commit -m "Removed .vscode directory because I switched back to using emacs."
+git push
+git add .
+git commit -m "Got model loading to work, bar textures; still figuring out how those work."
+git push
+git add .
+git commit -m "Added proper ship model, improved model loading, readded point light shader calculations."
+git push
+git add .
+git commit -m "Fixed some camera movement."
+git push
+vim
+grep
+gpr
+egerp
+grepp
+grep
+grep
+grep
+grep
+grep
+grep
+grep
+grep
+grep
+grep
+grep
+cmd
+vim

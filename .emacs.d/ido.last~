@@ -1,0 +1,69 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("d:/MinGW/include/" . "GL/")
+ ("d:/MinGW/" . "include/")
+ ("d:/C_Programs/" . "CHIP-8/")
+ ("d:/" . "C_Programs/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "c:/Users/ameer/"
+ "d:/C_Programs/CHIP-8/"
+ "d:/C_Programs/bf/"
+ "d:/C_Programs/BrainFuck/"
+ "d:/C_Programs/"
+ "d:/MinGW/include/"
+ "d:/MinGW/include/GL/"
+ "d:/C_Programs/perseverance/"
+ "d:/C_Programs/front/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ ".emacs"
+ "main.c"
+ "compile_flags.txt"
+ "chip8.h"
+ "compile_commands.json"
+ ".emacs.bak"
+ "test.c"
+ "eglew.h"
+ "main.cpp"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("c:/Users/ameer/" (24708 17363 0 0) "_viminfo" "_.swp" "_.swo" "_.swn" "_.emacs.d/" "_.doom.d/" "wowowow.c" "woop.c~" "woop.c" "weathericons.ttf" "vmlogs/" "vimfiles/" "Videos/" "vars" "thingo.txt" "thingo.c" "thing.txt" "thing.c~" "thing.c" "test]" "test/" "temp~" "Templates/" "temp" "TAGS" "Start Menu/" "SPACEMACS_.emacs.d/" "source/" "SendTo/" "Searches/" "scratch_stuff.c" "scratch_buffer" "scratch.c~" "scratch.c" "Saved Games/" "Roaming/" "Recent/" "program.c" "PrintHood/" "Pictures/" "path/" "out.cpp" "OneDrive/" "octicons.ttf" "nuuid.ini" "ntuser.ini" "NTUSER.DAT{286afd5d-86ba-11eb-8557-00155d6377ec}.TMContainer00000000000000000002.regtrans-ms" "NTUSER.DAT{286afd5d-86ba-11eb-8557-00155d6377ec}.TMContainer00000000000000000001.regtrans-ms" "NTUSER.DAT{286afd5d-86ba-11eb-8557-00155d6377ec}.TM.blf" "ntuser.dat.LOG2" "ntuser.dat.LOG1" "NTUSER.DAT" "Nox_share/" "NetHood/" "mypixmap.png" "My Documents/" "Music/" "MicrosoftEdgeBackups/" "material-design-icons.ttf" "Local Settings/" "Links/" "IntelGraphicsProfiles/" "Intel/" "inst.ini" "inittk.ini" "game.c~" "game.c" "fontawesome.ttf" "file-icons.ttf" "Favorites/" "EMACS_TEMP~" "EMACS_TEMP" "eclipse/" "Downloads/" "Documents/" "Desktop/" "DartEditor/" "d4ac4633ebd6440fa397b84f1bc94a3c.7z" "Cookies/" "Contacts/" "Application Data/" "Apple/" "AppData/" "ansel/" "all-the-icons.ttf" "a.exe" "3D Objects/" ".wowowow.c.un~" ".woop.c.un~" ".vscode/" ".VirtualBox/" ".vimrc" ".tooling/" ".thumbnails/" ".thingo.txt.un~" ".thingo.c.un~" ".thing.txt.un~" ".thing.c.un~" ".templateengine/" ".spacemacs.env" ".spacemacs" ".rustup/" ".program.c.un~" ".p2/" ".out.cpp.un~" ".omnisharp/" ".nuget/" ".minttyrc" ".m2/" ".lemminx/" ".idlerc/" ".gvimrc" ".gradle/" ".gitconfig" ".git/" ".game.c.un~" ".emulator_console_auth_token" ".emacs~" ".emacs.d/" ".emacs.bak" ".emacs" ".eclipse/" ".dotnet/" ".dartium/" ".config/" ".cargo/" ".cache/" ".BigNox/" ".bash_history" "..vimrc.un~" "$tutor$" "#temp#" "#.emasc#" "../" "./")
+
+ ("d:/C_Programs/CHIP-8/" (24708 13738 0 0) "tetris.c8" "TAGS" "SDL2.dll" "pong2.c8" "main.c~" "main.c" "invaders.c8" "compile_flags.txt~" "compile_flags.txt" "compile_commands.json" "chip8.h~" "chip8.h" "c.bat" "a.exe" "../" "./")
+
+ ("d:/C_Programs/bf/" (24707 40258 0 0) "mandelbrot.bf" "main.c~" "main.c" "hello_world.bf" "c.bat" "bf.exe" "../" "./")
+
+ ("d:/C_Programs/BrainFuck/" (24707 38304 0 0) "test.b" "mandelbrot.b" "main.c~" "main.c" "helloword.bf" "golf.exe" "c.bat" "a.exe" "../" "./")
+
+ ("d:/C_Programs/" (24707 36561 0 0) "zlib1.dll" "weditor/" "vs/" "visualization/" "tmacs/" "tinyplanet/" "timer/" "tetris/" "testing/" "test.c" "test/" "TAGS" "system/" "stw/" "stellosis/" "startree/" "spirit/" "SDL2_ttf.dll" "SDL2_image.dll" "SDL2.dll" "scratch/" "remove_comments/" "rain/" "quick/" "program.c" "prime/" "pi/" "perseverance/" "particles/" "new/" "nail/" "moon/" "message/" "mandelbrot/" "lunar/" "lucon.ttf" "libwebp-7.dll" "libtiff-5.dll" "libpng16-16.dll" "libjpeg-9.dll" "libfreetype-6.dll" "image_viewer/" "imageview/" "front/" "frail/" "example/" "df/" "debug/" "cpp/" "cour.ttf" "consola.ttf" "circle/" "CHIP-8/" "chess/" "calculator/" "c.bat" "BrainFuck/" "bouncy.rar" "bouncy/" "bf/" "abs/" "a.exe" "../" "./")
+
+ ("d:/C_Programs/perseverance/" (24707 36250 0 0) "TAGS" "source.p" "main.c" "c.bat" "a.exe" "../" "./")
+
+ ("d:/MinGW/include/GL/" (24648 895 0 0) "wglew.h" "glxew.h" "glu.h" "glext.h" "glew.h" "gl.h" "eglew.h" "../" "./")
+
+ ("d:/MinGW/include/" (24645 37196 0 0) "_mingw.h" "zmouse.h" "xprtdefs.h" "wtypes.h" "wtsapi32.h" "wsnetbs.h" "wsipx.h" "wsahelp.h" "ws2tcpip.h" "ws2spi.h" "winver.h" "winuser.h" "winsvc.h" "winspool.h" "winsock2.h" "winsock.h" "winsnmp.h" "winresrc.h" "winreg.h" "winperf.h" "winnt.h" "winnls.h" "winnetwk.h" "winldap.h" "winioctl.h" "wininet.h" "wingdi.h" "winerror.h" "windowsx.h" "windows.h" "windns.h" "windef.h" "wincrypt.h" "wincon.h" "winber.h" "winbase.h" "winable.h" "wctype.h" "wchar.h" "w32api.h" "vptype.h" "vmr9.h" "vidcap.h" "vfw.h" "values.h" "uxtheme.h" "utime.h" "usp10.h" "userenv.h" "unknwn.h" "unistd.h" "tmschema.h" "tlhelp32.h" "time.h" "tchar.h" "sys/" "svcguid.h" "subauth.h" "strmif.h" "strings.h" "string.h" "stm.h" "stdlib.h" "stdio.h" "stdint.h" "sspi.h" "sqlucode.h" "sqltypes.h" "sqlext.h" "sql.h" "specstrings.h" "snmp.h" "signal.h" "shobjidl.h" "shlwapi.h" "shlobj.h" "shlguid.h" "shldisp.h" "shellapi.h" "share.h" "SFML/" "setupapi.h" "setjmp.h" "servprov.h" "security.h" "secext.h" "search.h" "SDL2/" "sdkddkver.h" "sddl.h" "scrnsave.h" "schnlsp.h" "schannel.h" "rtutils.h" "rpcproxy.h" "rpcnterr.h" "rpcnsip.h" "rpcnsi.h" "rpcndr.h" "rpcdcep.h" "rpcdce2.h" "rpcdce.h" "rpc.h" "routprot.h" "richole.h" "richedit.h" "regstr.h" "reason.h" "rassapi.h" "raserror.h" "rasdlg.h" "ras.h" "rapi.h" "qedit.h" "pshpack8.h" "pshpack4.h" "pshpack2.h" "pshpack1.h" "psapi.h" "prsht.h" "profile.h" "profil.h" "process.h" "powrprof.h" "poppack.h" "pbt.h" "parts/" "oleidl.h" "oledlg.h" "olectlid.h" "olectl.h" "oleauto.h" "oleacc.h" "ole2ver.h" "ole2.h" "ole.h" "odbcinst.h" "ocidl.h" "objsel.h" "objsafe.h" "objidl.h" "objfwd.h" "objbase.h" "oaidl.h" "ntsecpkg.h" "ntsecapi.h" "ntldap.h" "ntdsbcli.h" "ntdsapi.h" "ntdll.h" "ntdef.h" "nspapi.h" "nddeapi.h" "nb30.h" "mswsock.h" "msvcrtver.h" "mshtml.h" "msacm.h" "mq.h" "mprapi.h" "mpegtype.h" "mmsystem.h" "mmreg.h" "mlang.h" "mgmtapi.h" "mgm.h" "memory.h" "mem.h" "mcx.h" "mciavi.h" "mbstring.h" "mbctype.h" "math.h" "mapi.h" "malloc.h" "lzexpand.h" "locale.h" "lmwksta.h" "lmuseflg.h" "lmuse.h" "lmsvc.h" "lmstats.h" "lmsname.h" "lmshare.h" "lmserver.h" "lmrepl.h" "lmremutl.h" "lmmsg.h" "lmerrlog.h" "lmerr.h" "lmcons.h" "lmconfig.h" "lmchdev.h" "lmbrowsr.h" "lmaudit.h" "lmat.h" "lmapibuf.h" "lmalert.h" "lmaccess.h" "lm.h" "limits.h" "libgen.h" "largeint.h" "ksmedia.h" "ks.h" "isguids.h" "ipxtfflt.h" "ipxrtdef.h" "ipxconst.h" "iptypes.h" "iprtrmib.h" "ipinfoid.h" "ipifcons.h" "iphlpapi.h" "ipexport.h" "io.h" "inttypes.h" "intshcut.h" "initguid.h" "imm.h" "imagehlp.h" "il21dec.h" "idispids.h" "icm.h" "httpext.h" "gmon.h" "glob.h" "glm/" "GLFW/" "GL/" "getopt.h" "gdiplus.h" "gdiplus/" "fltdefs.h" "float.h" "fenv.h" "features.h" "fcntl.h" "exdispid.h" "exdisp.h" "excpt.h" "evcode.h" "errors.h" "errorrep.h" "errno.h" "edevdefs.h" "dxerr9.h" "dxerr8.h" "dvdmedia.h" "dvdevcod.h" "dsrole.h" "dsquery.h" "dshow.h" "dsgetdc.h" "dsclient.h" "dsadmin.h" "dos.h" "docobj.h" "dlgs.h" "dlfcn.h" "dirent.h" "direct.h" "dir.h" "dhcpcsdk.h" "devguid.h" "ddk/" "ddeml.h" "dde.h" "dbt.h" "d3d9types.h" "d3d9caps.h" "d3d9.h" "custcntl.h" "ctype.h" "cplext.h" "cpl.h" "control.h" "conio.h" "complex.h" "commdlg.h" "commctrl.h" "comcat.h" "cmnquery.h" "cguid.h" "cglm/" "cderr.h" "bdatypes.h" "basetyps.h" "basetsd.h" "aygshell.h" "aviriff.h" "audevcod.h" "assert.h" "amvideo.h" "amaudio.h" "alloca.h" "afxres.h" "adsprop.h" "aclui.h" "aclapi.h" "accctrl.h" "../" "./")
+
+ ("d:/MinGW/" (24153 26277 0 0) "var/" "share/" "mingw32/" "libexec/" "lib/" "include/" "bin/" "../" "./")
+
+ ("d:/C_Programs/particles/" (24707 35472 0 0) "TAGS" "SDL2.dll" "main.c~" "main.c" "draw.h" "c.bat" "a.exe" "../" "./")
+
+ ("c:/Users/ameer/Desktop/" (24706 4767 0 0) "TAGS" "Random/" "global_hotkeys.ahk" "desktop.ini" "../" "./")
+
+ ("c:/Users/" (24657 21084 0 0) "Public/" "desktop.ini" "defaultuser0/" "Default User/" "Default/" "ameer/" "All Users/" "../" "./")
+
+ ("d:/C_Programs/front/" (24619 51863 0 0) "zlib1.dll" "stw.h~" "SDL2_ttf.dll" "SDL2_image.dll" "SDL2.dll" "main.cpp~" "main.cpp" "libwebp-7.dll" "libtiff-5.dll" "libpng16-16.dll" "libjpeg-9.dll" "libfreetype-6.dll" "geo~" "cour.ttf" "consola.ttf" "c.bat~" "c.bat" "a.exe" "../" "./")
+
+ ("c:/$GetCurrent/" (23884 37454 0 0) "SafeOS/" "media/" "Logs/" "../" "./")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t

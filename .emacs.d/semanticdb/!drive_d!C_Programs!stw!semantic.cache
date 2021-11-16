@@ -1,0 +1,885 @@
+;; Object semanticdb-project-database-file-232c030
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-232c030"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-269bd0c"
+      :major-mode c-mode
+      :tags 
+        '( ("stw.h" include nil nil [1 17])
+            ("vector_free_keeper" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type ("size_t" type (:type "class") nil nil))
+                nil [75 112])
+            ("stw_vector_make" function
+               (:pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [189 194]))                  
+                :type ("stw_vector" type (:type "class") nil nil))
+                nil [161 416])
+            ("stw_vector_push" function
+               (:arguments 
+                  ( ("vec" variable
+                       (:pointer 1
+                        :type ("stw_vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [488 504])
+                    ("v" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [505 513]))                  
+                :type "void")
+                nil [467 728])
+            ("stw_vector_add" function
+               (:arguments 
+                  ( ("vec" variable
+                       (:pointer 1
+                        :type ("stw_vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [796 812])
+                    ("index" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [813 826])
+                    ("v" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [827 835]))                  
+                :type "void")
+                nil [776 1392])
+            ("stw_vector_remove" function
+               (:arguments 
+                  ( ("vec" variable
+                       (:pointer 1
+                        :type ("stw_vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1468 1484])
+                    ("index" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1485 1498]))                  
+                :type "void")
+                nil [1445 1755])
+            ("stw_vector_find" function
+               (:arguments 
+                  ( ("vec" variable
+                       (:pointer 1
+                        :type ("stw_vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1881 1897])
+                    ("v" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1898 1906]))                  
+                :type "int")
+                nil [1861 2027])
+            ("stw_vector_pop" function
+               (:pointer 1
+                :arguments 
+                  ( ("vec" variable
+                       (:pointer 1
+                        :type ("stw_vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2112 2128]))                  
+                :type "void")
+                nil [2091 2274])
+            ("stw_vector_free_content" function
+               (:arguments 
+                  ( ("vec" variable
+                       (:pointer 1
+                        :type ("stw_vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2364 2380]))                  
+                :type "void")
+                nil [2335 2473])
+            ("stw_vector_free_content_by" function
+               (:arguments 
+                  ( ("vec" variable
+                       (:pointer 1
+                        :type ("stw_vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2577 2593])
+                    ("free_func" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 2
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [2612 2619]))                          
+                        :type "void")
+                        nil nil))                  
+                :type "void")
+                nil [2545 2719])
+            ("stw_vector_free" function
+               (:arguments 
+                  ( ("vec" variable
+                       (:pointer 1
+                        :type ("stw_vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2766 2782])
+                    ("free_content" variable (:type "bool") (reparse-symbol arg-sub-list) [2783 2801]))                  
+                :type "void")
+                nil [2745 2922])
+            ("stw_vector_check_leaks" function (:type "void") nil [2924 3019])
+            ("stw_list_make" function
+               (:pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3102 3107]))                  
+                :type ("stw_list" type (:type "class") nil nil))
+                nil [3078 3245])
+            ("stw_list_free" function
+               (:arguments 
+                  ( ("list" variable
+                       (:pointer 1
+                        :type ("stw_list" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3266 3281])
+                    ("free_elements" variable (:type "bool") (reparse-symbol arg-sub-list) [3282 3301]))                  
+                :type "void")
+                nil [3247 3574])
+            ("stw_list_get" function
+               (:pointer 1
+                :arguments 
+                  ( ("list" variable
+                       (:pointer 1
+                        :type ("stw_list" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3595 3610])
+                    ("index" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3611 3624]))                  
+                :type "void")
+                nil [3576 3938])
+            ("stw_list_push" function
+               (:arguments 
+                  ( ("list" variable
+                       (:pointer 1
+                        :type ("stw_list" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3959 3974])
+                    ("ptr" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [3975 3985]))                  
+                :type "void")
+                nil [3940 4373])
+            ("stw_list_pop" function
+               (:pointer 1
+                :arguments 
+                  ( ("list" variable
+                       (:pointer 1
+                        :type ("stw_list" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4394 4409]))                  
+                :type "void")
+                nil [4375 4605])
+            ("stw_file_length" function
+               (:arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4684 4695]))                  
+                :type "long")
+                nil [4663 4857])
+            ("stw_readfile" function
+               (:pointer 1
+                :arguments 
+                  ( ("filepath" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4878 4893])
+                    ("o_length" variable
+                       (:pointer 1
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4894 4911]))                  
+                :type "char")
+                nil [4859 5209])
+            ("stw_listfiles" function
+               (:pointer 1
+                :arguments 
+                  ( ("directory" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5378 5394]))                  
+                :type ("stw_vector" type (:type "class") nil nil))
+                nil [5352 5864])
+            ("stw_sort_ascend" function
+               (:arguments 
+                  ( ("array" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [5993 6004])
+                    ("count" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6005 6018]))                  
+                :type "void")
+                nil [5972 6300])
+            ("stw_sort_descend" function
+               (:arguments 
+                  ( ("array" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [6366 6377])
+                    ("count" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6378 6391]))                  
+                :type "void")
+                nil [6344 6673])
+            ("stw_global_clock" variable
+               (:typemodifiers ("static")
+                :default-value "-1"
+                :type ("clock_t" type (:type "class") nil nil))
+                nil [6727 6764])
+            ("stw_timer_start" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [6818 6823]))                  
+                :type "void")
+                nil [6797 6859])
+            ("stw_timer_stop" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [6961 6966]))                  
+                :type "double")
+                nil [6939 7192])
+            ("string_free_keeper" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type ("size_t" type (:type "class") nil nil))
+                nil [7246 7283])
+            ("string_make" function
+               (:pointer 1
+                :arguments 
+                  ( ("start" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7309 7321]))                  
+                :type ("stw_string" type (:type "class") nil nil))
+                nil [7285 7719])
+            ("string_copy" function
+               (:pointer 1
+                :arguments 
+                  ( ("dest" variable
+                       (:pointer 1
+                        :type ("stw_string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7745 7762])
+                    ("src" variable
+                       (:pointer 1
+                        :type ("stw_string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7763 7779]))                  
+                :type ("stw_string" type (:type "class") nil nil))
+                nil [7721 7834])
+            ("string_append" function
+               (:arguments 
+                  ( ("str" variable
+                       (:pointer 1
+                        :type ("stw_string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7855 7871])
+                    ("app" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7872 7882]))                  
+                :type "void")
+                nil [7836 8076])
+            ("string_substr" function
+               (:pointer 1
+                :arguments 
+                  ( ("str" variable
+                       (:pointer 1
+                        :type ("stw_string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8098 8114])
+                    ("start" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8115 8128])
+                    ("end" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8129 8140]))                  
+                :type "char")
+                nil [8078 8235])
+            ("string_remove_index" function
+               (:arguments 
+                  ( ("str" variable
+                       (:pointer 1
+                        :type ("stw_string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8262 8278])
+                    ("index" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8279 8292]))                  
+                :type "void")
+                nil [8237 8401])
+            ("string_print" function
+               (:arguments 
+                  ( ("str" variable
+                       (:pointer 1
+                        :type ("stw_string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8421 8437]))                  
+                :type "void")
+                nil [8403 8461])
+            ("string_free" function
+               (:arguments 
+                  ( ("str" variable
+                       (:pointer 1
+                        :type ("stw_string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8480 8496]))                  
+                :type "void")
+                nil [8463 8561])
+            ("string_check_leaks" function (:type "void") nil [8563 8680])
+            ("stw_strlen" function
+               (:arguments 
+                  ( ("str" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8700 8716]))                  
+                :type ("size_t" type (:type "class") nil nil))
+                nil [8682 8782])
+            ("stw_string_occurance" function
+               (:arguments 
+                  ( ("str" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8877 8893])
+                    ("find" variable
+                       (:constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8894 8910]))                  
+                :type ("size_t" type (:type "class") nil nil))
+                nil [8849 9069])
+            ("stw_splitstring_vector" function
+               (:pointer 1
+                :arguments 
+                  ( ("str" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [9106 9116])
+                    ("delim" variable (:type "char") (reparse-symbol arg-sub-list) [9117 9128]))                  
+                :type ("stw_vector" type (:type "class") nil nil))
+                nil [9071 9878])
+            ("stw_rand" function
+               (:arguments 
+                  ( ("end" variable (:type "int") (reparse-symbol arg-sub-list) [9945 9953]))                  
+                :type "int")
+                nil [9932 9973])
+            ("stw_rand_total" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [9993 9998]))                  
+                :type "int")
+                nil [9974 10016])
+            ("stw_randf" function
+               (:arguments 
+                  ( ("end" variable (:type "float") (reparse-symbol arg-sub-list) [10033 10043]))                  
+                :type "float")
+                nil [10017 10063])
+            ("stw_randb" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [10079 10084]))                  
+                :type "bool")
+                nil [10064 10106])
+            ("stw_is_prime" function
+               (:arguments 
+                  ( ("a" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10177 10183]))                  
+                :type "bool")
+                nil [10159 10428]))          
+      :file "stw.c"
+      :pointmax 10429
+      :fsize 10874
+      :lastmodtime '(24609 13828 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-269e73c"
+      :major-mode c-mode
+      :tags 
+        '( ("stdlib.h" include (:system-flag t) nil [15 34])
+            ("stdio.h" include (:system-flag t) nil [35 53])
+            ("assert.h" include (:system-flag t) nil [54 73])
+            ("math.h" include (:system-flag t) nil [74 91])
+            ("stdint.h" include (:system-flag t) nil [92 111])
+            ("false" variable (:constant-flag t) nil [200 205])
+            ("true" variable (:constant-flag t) nil [216 220])
+            ("i8" type
+               (:typedef ("int8_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [225 246])
+            ("i16" type
+               (:typedef ("int16_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [247 268])
+            ("i32" type
+               (:typedef ("int32_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [269 290])
+            ("i64" type
+               (:typedef ("int64_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [291 312])
+            ("u8" type
+               (:typedef ("uint8_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [313 334])
+            ("u16" type
+               (:typedef ("uint16_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [335 356])
+            ("u32" type
+               (:typedef ("uint32_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [357 378])
+            ("u64" type
+               (:typedef ("uint64_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [379 400])
+            ("I8_MIN" variable (:constant-flag t) nil [410 416])
+            ("I16_MIN" variable (:constant-flag t) nil [434 441])
+            ("I32_MIN" variable (:constant-flag t) nil [460 467])
+            ("I64_MIN" variable (:constant-flag t) nil [486 493])
+            ("I8_MAX" variable (:constant-flag t) nil [513 519])
+            ("I16_MAX" variable (:constant-flag t) nil [537 544])
+            ("I32_MAX" variable (:constant-flag t) nil [563 570])
+            ("I64_MAX" variable (:constant-flag t) nil [589 596])
+            ("U8_MAX" variable (:constant-flag t) nil [616 622])
+            ("U16_MAX" variable (:constant-flag t) nil [641 648])
+            ("U32_MAX" variable (:constant-flag t) nil [668 675])
+            ("U64_MAX" variable (:constant-flag t) nil [695 702])
+            ("M_PI" variable (:constant-flag t) nil [737 741])
+            ("RAD_TO_DEG" variable (:constant-flag t) nil [771 781])
+            ("stw_vector" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("length" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [873 897])
+                          ("capacity" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [873 897])
+                          ("array" variable
+                             (:pointer 2
+                              :type "void")
+                              (reparse-symbol classsubparts) [902 915]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [852 929])
+            ("stw_vector_make" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [959 964]))                  
+                :type ("stw_vector" type (:type "class") nil nil))
+                nil [931 965])
+            ("stw_vector_push" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("vec" variable
+                       (:pointer 1
+                        :type ("stw_vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [987 1003])
+                    ("v" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1004 1012]))                  
+                :type "void")
+                nil [966 1013])
+            ("stw_vector_add" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("vec" variable
+                       (:pointer 1
+                        :type ("stw_vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1034 1050])
+                    ("index" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1051 1064])
+                    ("v" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1065 1073]))                  
+                :type "void")
+                nil [1014 1074])
+            ("stw_vector_remove" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("vec" variable
+                       (:pointer 1
+                        :type ("stw_vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1098 1114])
+                    ("index" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1115 1128]))                  
+                :type "void")
+                nil [1075 1129])
+            ("stw_vector_find" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("vec" variable
+                       (:pointer 1
+                        :type ("stw_vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1151 1167])
+                    ("v" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1168 1176]))                  
+                :type "int")
+                nil [1130 1177])
+            ("stw_vector_pop" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("vec" variable
+                       (:pointer 1
+                        :type ("stw_vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1199 1215]))                  
+                :type "void")
+                nil [1178 1216])
+            ("stw_vector_free_content" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("vec" variable
+                       (:pointer 1
+                        :type ("stw_vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1246 1262]))                  
+                :type "void")
+                nil [1217 1263])
+            ("stw_vector_free_content_by" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("vec" variable
+                       (:pointer 1
+                        :type ("stw_vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1296 1312])
+                    ("free_func" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 2
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [1331 1338]))                          
+                        :type "void")
+                        nil nil))                  
+                :type "void")
+                nil [1264 1340])
+            ("stw_vector_free" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("vec" variable
+                       (:pointer 1
+                        :type ("stw_vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1362 1378])
+                    ("free_content" variable (:type "bool") (reparse-symbol arg-sub-list) [1379 1397]))                  
+                :type "void")
+                nil [1341 1398])
+            ("stw_vector_check_leaks" function
+               (:prototype-flag t
+                :type "void")
+                nil [1399 1429])
+            ("memory.h" include (:system-flag t) nil [1488 1507])
+            ("stw_list_node" type
+               (:members 
+                  ( ("next" variable
+                       (:pointer 1
+                        :type ("stw_list_node" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [1544 1571])
+                    ("value" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [1576 1588]))                  
+                :type "struct")
+                nil [1509 1605])
+            ("stw_list_node" type
+               (:typedef ("stw_list_node" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [1509 1605])
+            ("stw_list" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("length" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1628 1642])
+                          ("start" variable
+                             (:pointer 1
+                              :type ("stw_list_node" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [1647 1675])
+                          ("curr" variable
+                             (:pointer 1
+                              :type ("stw_list_node" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [1647 1675]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [1607 1687])
+            ("stw_list_make" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1713 1718]))                  
+                :type ("stw_list" type (:type "class") nil nil))
+                nil [1689 1719])
+            ("stw_list_free" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("list" variable
+                       (:pointer 1
+                        :type ("stw_list" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1739 1754])
+                    ("free_elements" variable (:type "bool") (reparse-symbol arg-sub-list) [1755 1774]))                  
+                :type "void")
+                nil [1720 1775])
+            ("stw_list_get" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("list" variable
+                       (:pointer 1
+                        :type ("stw_list" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1795 1810])
+                    ("index" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1811 1824]))                  
+                :type "void")
+                nil [1776 1825])
+            ("stw_list_push" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("list" variable
+                       (:pointer 1
+                        :type ("stw_list" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1845 1860])
+                    ("ptr" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1861 1871]))                  
+                :type "void")
+                nil [1826 1872])
+            ("stw_list_pop" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("list" variable
+                       (:pointer 1
+                        :type ("stw_list" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1892 1907]))                  
+                :type "void")
+                nil [1873 1908])
+            ("dirent.h" include (:system-flag t) nil [1966 1985])
+            ("stw_file_length" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2033 2044]))                  
+                :type "long")
+                nil [2012 2045])
+            ("stw_readfile" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("filepath" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2065 2080])
+                    ("o_length" variable
+                       (:pointer 1
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2081 2098]))                  
+                :type "char")
+                nil [2046 2099])
+            ("stw_listfiles" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("directory" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2126 2142]))                  
+                :type ("stw_vector" type (:type "class") nil nil))
+                nil [2100 2143])
+            ("stw_sort_ascend" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("array" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [2218 2229])
+                    ("count" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2230 2243]))                  
+                :type "void")
+                nil [2197 2244])
+            ("stw_sort_descend" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("array" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [2267 2278])
+                    ("count" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2279 2292]))                  
+                :type "void")
+                nil [2245 2293])
+            ("time.h" include (:system-flag t) nil [2347 2364])
+            ("stw_timer_start" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2387 2392]))                  
+                :type "void")
+                nil [2366 2393])
+            ("stw_timer_stop" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2416 2421]))                  
+                :type "double")
+                nil [2394 2422])
+            ("string.h" include (:system-flag t) nil [2476 2495])
+            ("stw_string" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("length" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2518 2542])
+                          ("capacity" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2518 2542])
+                          ("str" variable
+                             (:pointer 1
+                              :type "char")
+                              (reparse-symbol classsubparts) [2547 2557]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [2497 2571])
+            ("string_make" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("start" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2597 2609]))                  
+                :type ("stw_string" type (:type "class") nil nil))
+                nil [2573 2610])
+            ("string_copy" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("dest" variable
+                       (:pointer 1
+                        :type ("stw_string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2635 2652])
+                    ("src" variable
+                       (:pointer 1
+                        :type ("stw_string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2653 2669]))                  
+                :type ("stw_string" type (:type "class") nil nil))
+                nil [2611 2670])
+            ("string_append" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("str" variable
+                       (:pointer 1
+                        :type ("stw_string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2690 2706])
+                    ("app" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2707 2717]))                  
+                :type "void")
+                nil [2671 2718])
+            ("string_substr" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("str" variable
+                       (:pointer 1
+                        :type ("stw_string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2739 2755])
+                    ("start" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2756 2769])
+                    ("end" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2770 2781]))                  
+                :type "char")
+                nil [2719 2782])
+            ("string_remove_index" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("str" variable
+                       (:pointer 1
+                        :type ("stw_string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2808 2824])
+                    ("index" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2825 2838]))                  
+                :type "void")
+                nil [2783 2839])
+            ("string_print" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("str" variable
+                       (:pointer 1
+                        :type ("stw_string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2858 2874]))                  
+                :type "void")
+                nil [2840 2875])
+            ("string_free" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("str" variable
+                       (:pointer 1
+                        :type ("stw_string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2893 2909]))                  
+                :type "void")
+                nil [2876 2910])
+            ("string_check_leaks" function
+               (:prototype-flag t
+                :type "void")
+                nil [2911 2937])
+            ("stw_strlen" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("str" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2957 2973]))                  
+                :type ("size_t" type (:type "class") nil nil))
+                nil [2939 2974])
+            ("stw_string_occurance" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("str" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3003 3019])
+                    ("find" variable
+                       (:constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3020 3036]))                  
+                :type ("size_t" type (:type "class") nil nil))
+                nil [2975 3037])
+            ("stw_splitstring_vector" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("str" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3073 3083])
+                    ("delim" variable (:type "char") (reparse-symbol arg-sub-list) [3084 3095]))                  
+                :type ("stw_vector" type (:type "class") nil nil))
+                nil [3038 3096])
+            ("stw_rand" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("end" variable (:type "int") (reparse-symbol arg-sub-list) [3163 3171]))                  
+                :type "int")
+                nil [3150 3172])
+            ("stw_rand_total" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3192 3197]))                  
+                :type "int")
+                nil [3173 3198])
+            ("stw_randf" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("end" variable (:type "float") (reparse-symbol arg-sub-list) [3215 3225]))                  
+                :type "float")
+                nil [3199 3226])
+            ("stw_randb" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3242 3247]))                  
+                :type "bool")
+                nil [3227 3248])
+            ("stw_is_prime" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("a" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3319 3328]))                  
+                :type "bool")
+                nil [3301 3329]))          
+      :file "stw.h"
+      :pointmax 3330
+      :fsize 3465
+      :lastmodtime '(24579 42260 0 0)
+      :unmatched-syntax '((punctuation 190 . 191) (BOOL 186 . 190) (INT 182 . 185) (TYPEDEF 174 . 181) (symbol 9 . 13) (symbol 2 . 8) (punctuation 1 . 2))
+      :lexical-table 
+        '(("false" . ((number "0" 206 . 207)))
+          ("U8_MAX" . ((symbol "UINT8_MAX" 623 . 632)))
+          ("U16_MAX" . ((symbol "UINT16_MAX" 649 . 659)))
+          ("U64_MAX" . ((symbol "UINT64_MAX" 703 . 713)))
+          ("I16_MAX" . ((symbol "INT16_MAX" 545 . 554)))
+          ("I64_MAX" . ((symbol "INT64_MAX" 597 . 606)))
+          ("I16_MIN" . ((symbol "INT16_MIN" 442 . 451)))
+          ("I64_MIN" . ((symbol "INT64_MIN" 494 . 503)))
+          ("RAD_TO_DEG" . ((number "57.295779513" 782 . 794)))
+          ("true" . ((number "1" 222 . 223)))
+          ("U32_MAX" . ((symbol "UINT32_MAX" 676 . 686)))
+          ("M_PI" . ((number "3.141592653F" 742 . 754)))
+          ("I8_MAX" . ((symbol "INT8_MAX" 520 . 528)))
+          ("I32_MAX" . ((symbol "INT32_MAX" 571 . 580)))
+          ("I8_MIN" . ((symbol "INT8_MIN" 417 . 425)))
+          ("I32_MIN" . ((symbol "INT32_MIN" 468 . 477)))
+          )
+)
+    (semanticdb-table "semanticdb-table-268d014"
+      :major-mode c-mode
+      :tags 
+        '( ("stw.h" include nil nil [1 17])
+            ("main" function (:type "int") nil [19 202]))          
+      :file "main.c"
+      :pointmax 203
+      :fsize 213
+      :lastmodtime '(24609 13977 0 0)
+      :unmatched-syntax nil))
+  :file "!drive_d!C_Programs!stw!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

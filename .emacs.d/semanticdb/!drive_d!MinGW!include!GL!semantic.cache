@@ -1,0 +1,16 @@
+;; Object semanticdb-project-database-file-2afda14
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-2afda14"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-2afd9f4"
+      :major-mode c-mode
+      :tags nil
+      :file "eglew.h"
+      :pointmax 103595
+      :fsize 103594
+      :lastmodtime '(22911 5043 0 0)
+      :unmatched-syntax nil))
+  :file "!drive_d!MinGW!include!GL!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

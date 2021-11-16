@@ -1,0 +1,2 @@
+;;; Generated package description from c:/Users/ameer/.emacs.d/elpa/bury-successful-compilation-0.1.2/bury-successful-compilation.el  -*- no-byte-compile: t -*-
+(define-package "bury-successful-compilation" "0.1.2" "Bury the *compilation* buffer after successful compilation" 'nil :commit "064817b44a431476305099301311def0a2d9d543" :authors '(("Eric Crosson" . "esc@ericcrosson.com")) :maintainer '("Eric Crosson" . "esc@ericcrosson.com") :keywords '("compilation"))

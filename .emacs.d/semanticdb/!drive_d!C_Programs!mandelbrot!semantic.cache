@@ -1,0 +1,147 @@
+;; Object semanticdb-project-database-file-2585cf4
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-2585cf4"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-25858c8"
+      :major-mode c-mode
+      :tags 
+        '( ("SDL_MAIN_HANDLED" variable (:constant-flag t) nil [9 25])
+            ("SDL2/SDL.h" include (:system-flag t) nil [26 47])
+            ("SDL2/SDL_image.h" include (:system-flag t) nil [48 75])
+            ("stdio.h" include (:system-flag t) nil [77 95])
+            ("stdlib.h" include (:system-flag t) nil [96 115])
+            ("stdint.h" include (:system-flag t) nil [116 135])
+            ("string.h" include (:system-flag t) nil [136 155])
+            ("stdbool.h" include (:system-flag t) nil [156 176])
+            ("time.h" include (:system-flag t) nil [177 194])
+            ("real" type
+               (:typedef ("long double")
+                :type "typedef")
+                nil [196 222])
+            ("window_width" variable
+               (:constant-flag t
+                :default-value "1280"
+                :type "int")
+                nil [224 254])
+            ("window_height" variable
+               (:constant-flag t
+                :default-value "720"
+                :type "int")
+                nil [255 285])
+            ("is_high_quality" variable
+               (:default-value "false"
+                :type "bool")
+                nil [287 316])
+            ("max_iteration" variable (:type "int") nil [318 336])
+            ("scale" variable (:type ("real" type (:type "class") nil nil)) nil [337 348])
+            ("width" variable (:type "int") nil [350 368])
+            ("height" variable (:type "int") nil [350 368])
+            ("texture" variable
+               (:pointer 1
+                :type ("SDL_Texture" type (:type "class") nil nil))
+                nil [370 391])
+            ("surface" variable
+               (:pointer 1
+                :type ("SDL_Surface" type (:type "class") nil nil))
+                nil [392 413])
+            ("renderer" variable
+               (:pointer 1
+                :type ("SDL_Renderer" type (:type "class") nil nil))
+                nil [414 437])
+            ("Rectangle" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("x" variable (:type ("real" type (:type "class") nil nil)) (reparse-symbol classsubparts) [460 476])
+                          ("y" variable (:type ("real" type (:type "class") nil nil)) (reparse-symbol classsubparts) [460 476])
+                          ("w" variable (:type ("real" type (:type "class") nil nil)) (reparse-symbol classsubparts) [460 476])
+                          ("h" variable (:type ("real" type (:type "class") nil nil)) (reparse-symbol classsubparts) [460 476]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [439 489])
+            ("Color" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("rgb" variable
+                             (:dereference 1
+                              :type ("uint8_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [511 526])
+                          ("color" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [531 546]))                        
+                      :type "union")
+                      nil nil)
+                :type "typedef")
+                nil [491 555])
+            ("Clamp" function
+               (:arguments 
+                  ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [567 573]))                  
+                :type "int")
+                nil [557 645])
+            ("clamp" function
+               (:arguments 
+                  ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [657 663])
+                    ("min" variable (:type "int") (reparse-symbol arg-sub-list) [664 672])
+                    ("max" variable (:type "int") (reparse-symbol arg-sub-list) [673 681]))                  
+                :type "int")
+                nil [647 735])
+            ("HsvToRgb" function
+               (:arguments 
+                  ( ("H" variable (:type ("real" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [796 803])
+                    ("S" variable (:type ("real" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [804 811])
+                    ("V" variable (:type ("real" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [812 819])
+                    ("c" variable
+                       (:pointer 1
+                        :type ("Color" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [820 829]))                  
+                :type "void")
+                nil [782 2229])
+            ("map" function
+               (:arguments 
+                  ( ("v" variable (:type ("real" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2240 2247])
+                    ("min" variable (:type ("real" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2248 2257])
+                    ("max" variable (:type ("real" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2258 2267])
+                    ("start" variable (:type ("real" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2268 2279])
+                    ("end" variable (:type ("real" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2280 2289]))                  
+                :type ("real" type (:type "class") nil nil))
+                nil [2231 2347])
+            ("set_pixel" function
+               (:arguments 
+                  ( ("surface" variable
+                       (:pointer 1
+                        :type ("SDL_Surface" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2364 2385])
+                    ("x" variable (:type "int") (reparse-symbol arg-sub-list) [2386 2392])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [2393 2399])
+                    ("pixel" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2400 2415]))                  
+                :type "void")
+                nil [2349 2675])
+            ("mandelbrot" function
+               (:arguments 
+                  ( ("view" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("Rectangle" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2693 2715]))                  
+                :type "void")
+                nil [2677 4175])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [4186 4195])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4196 4208]))                  
+                :type "int")
+                nil [4177 9281]))          
+      :file "main.c"
+      :pointmax 9282
+      :fsize 9649
+      :lastmodtime '(24703 2755 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("SDL_MAIN_HANDLED")
+          )
+))
+  :file "!drive_d!C_Programs!mandelbrot!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
