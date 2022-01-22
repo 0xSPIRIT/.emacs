@@ -2,14 +2,17 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("d:/dev/" . "GunBlade/")
  ("d:/MinGW/include/" . "GL/")
  ("d:/MinGW/" . "include/")
  ("d:/C_Programs/" . "CHIP-8/")
- ("d:/" . "C_Programs/")
+ ("d:/" . "dev/")
 )
 
 ;; ----- ido-work-directory-list -----
 (
+ "d:/dev/alaska/"
+ "d:/dev/GunBlade/"
  "c:/Users/ameer/"
  "d:/C_Programs/"
  "d:/C_Programs/CHIP-8/"
@@ -22,6 +25,9 @@
 
 ;; ----- ido-work-file-list -----
 (
+ "catalogue.go"
+ "actions.go"
+ "main.go"
  ".emacs"
  "main.c"
  "copy.bat"
@@ -29,13 +35,15 @@
  "chip8.h"
  "compile_commands.json"
  ".emacs.bak"
- "test.c"
- "eglew.h"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("d:/dev/" (24943 528 0 0) "test/" "gun/" "go/" "../" "./")
+ ("d:/dev/alaska/" (25068 18615 0 0) "util.go" "tools.go" "simulation.go" "res/" "notes/" "menu.go" "main.go" "init.go" "gui.go" "go.sum" "go.mod" "game.go" "catalogue.go" "c.bat" "bin/" "alaska.exe" ".git/" "../" "./")
+
+ ("d:/dev/GunBlade/" (24996 61240 0 0) "zlib1.dll" "util.go" "todo.txt" "res/" "player.go" "notes/" "note.txt" "main.go" "libpng16-16.dll" "guns.txt" "gungame.exe" "go.sum" "go.mod" "gamestates.go" "game.go" "entity.go" "enemy.go" "draw.go" "c.bat" "actions.go" ".git/" "../" "./")
+
+ ("d:/dev/" (25047 37728 0 0) "tspc/" "test/" "random/" "Processing/" "GunBlade/" "go/" "alaska/" "../" "./")
 
  ("d:/dev/gun/" (24956 34968 0 0) "__debug_bin" "zlib1.dll" "util.go" "todo.txt" "res/" "player.go" "note.txt" "main.go" "libpng16-16.dll" "gungame.exe" "go.sum" "go.mod" "gamestates.go" "entities.go" "enemy.go" "draw.go" "c.bat" "actions.go" ".git/" "../" "./")
 

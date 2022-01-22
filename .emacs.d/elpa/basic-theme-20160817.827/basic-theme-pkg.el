@@ -1,0 +1,2 @@
+;;; Generated package description from c:/Users/ameer/.emacs.d/elpa/basic-theme-20160817.827/basic-theme.el  -*- no-byte-compile: t -*-
+(define-package "basic-theme" "20160817.827" "Minimalistic light color theme" '((emacs "24")) :commit "e2a855bd39f4b78296228d4b790f9123156f7d7e" :authors '(("Felix Geller" . "fgeller@gmail.com")) :maintainer '("Felix Geller" . "fgeller@gmail.com") :keywords '("theme" "basic" "minimal" "colors") :url "http://github.com/fgeller/basic-theme.el")
