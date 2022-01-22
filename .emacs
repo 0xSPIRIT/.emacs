@@ -115,61 +115,41 @@
 (setq-default tab-width 4)
 (setq-default indent-tabs-mode t)
 (setq-default compile-command "c.bat")
+(setq-default program "alaska.exe")
 (setq-default fill-column 80)
-
-(setq-default program "D:/dev/alaska/bin/alaska.exe")
 
 (add-to-list 'load-path "~/.emacs.d/lisp/")
 
-(defun ido-goto-symbol (&optional symbol-list)
-  "Refresh imenu and jump to a place in the buffer using Ido."
-  (interactive)
-  (unless (featurep 'imenu)
-    (require 'imenu nil t))
-  (cond
-   ((not symbol-list)
-    (let ((ido-mode ido-mode)
-          (ido-enable-flex-matching
-           (if (boundp 'ido-enable-flex-matching)
-               ido-enable-flex-matching t))
-          name-and-pos symbol-names position)
-      (unless ido-mode
-        (ido-mode 1)
-        (setq ido-enable-flex-matching t))
-      (while (progn
-               (imenu--cleanup)
-               (setq imenu--index-alist nil)
-               (ido-goto-symbol (imenu--make-index-alist))
-               (setq selected-symbol
-                     (ido-completing-read "Identifier: " symbol-names))
-               (string= (car imenu--rescan-item) selected-symbol)))
-      (unless (and (boundp 'mark-active) mark-active)
-        (push-mark nil t nil))
-      (setq position (cdr (assoc selected-symbol name-and-pos)))
-      (cond
-       ((overlayp position)
-        (goto-char (overlay-start position)))
-       (t
-        (goto-char position)))))
-   ((listp symbol-list)
-    (dolist (symbol symbol-list)
-      (let (name position)
-        (cond
-         ((and (listp symbol) (imenu--subalist-p symbol))
-          (ido-goto-symbol symbol))
-         ((listp symbol)
-          (setq name (car symbol))
-          (setq position (cdr symbol)))
-         ((stringp symbol)
-          (setq name symbol)
-          (setq position
-                (get-text-property 1 'org-imenu-marker symbol))))
-        (unless (or (null position) (null name)
-                    (string= (car imenu--rescan-item) name))
-          (add-to-list 'symbol-names name)
-          (add-to-list 'name-and-pos (cons name position))))))))
+(setq completion-ignore-case t)
+(setq imenu-max-items 3)
+(setq imenu-anywhere-buffer-filter-functions '(imenu-anywhere-same-mode-p))
 
-(global-set-key (kbd "C-c i") 'ido-goto-symbol)
+(global-set-key (kbd "C-c i") #'ido-imenu-anywhere)
+(global-set-key (kbd "C-.") #'ido-imenu-anywhere)
+
+(use-package dired-x)
+
+(defun go-project-isearch()
+  (interactive)
+  (dired ".")
+  (dired-mark-suffix "go")
+  (dired-do-isearch)
+)
+
+(defun go-project-open-all-files()
+  (interactive)
+  (dired ".")
+  (dired-mark-suffix "go")
+  (dired-do-find-marked-files 4)
+  (switch-to-buffer "main.go")
+  (delete-other-windows)
+  (split-window-horizontally)
+  (kill-buffer "alaska")
+  (message "All .go files in alaska are opened.")
+  )
+
+(global-set-key (kbd "C-c s") 'go-project-isearch)
+(global-set-key (kbd "C-c o") 'go-project-open-all-files)
 
 (defun set-program()
   "Prompt user to enter a file name, with completion and history support."
@@ -251,10 +231,10 @@
     (if elt (setcdr elt new) (push `(alpha ,@new) default-frame-alist))
     (set-frame-parameter nil 'alpha new)))
 
-(defun open-private-url(url)
-  (interactive "sEnter URL: \n")
-  (shell-command (concat "firefox -private-window " url))
-  )
+;; (defun open-private-url(url)
+;;   (interactive "sEnter URL: \n")
+;;   (shell-command (concat "firefox -private-window " url))
+;;   )
 
 (defun set-frame-alpha (arg &optional active)
   (interactive "nEnter alpha value (1-100): \np")
@@ -280,7 +260,6 @@
 (global-set-key (kbd "M-g") 'goto-line)
 
 (global-set-key (kbd "C-c f") 'gofmt)
-(global-set-key (kbd "C-c o") 'open-private-url)
 
 (global-set-key (kbd "C-c C-u") 'go-remove-unused-imports)
 
@@ -419,7 +398,7 @@
  '(nrepl-message-colors
    '("#fb4933" "#d65d0e" "#d79921" "#747400" "#b9b340" "#14676b" "#689d6a" "#d3869b" "#b16286"))
  '(package-selected-packages
-   '(go-eldoc lush-theme tramp-theme nano-theme moe-theme lab-themes basic-theme gotham-theme clues-theme ample-theme afternoon-theme abyss-theme jazz-theme subatomic-theme cyberpunk-theme doom-themes almost-mono-themes gruber-darker-theme go-dlv bury-successful-compilation go-autocomplete auto-complete go-rename projectile crux selectrum dumb-jump go-complete move-text go-mode sublime-themes waher-theme good-scroll zenburn-theme yasnippet which-key use-package solarized-theme rustic rust-mode rtags ripgrep naysayer-theme monokai-theme monokai-alt-theme molokai-theme magit lsp-ui lsp-dart key-chord ivy irony iedit hover helm-xref helm-lsp helm-gtags god-mode glsl-mode ggtags evil-visual-mark-mode esup elcord csharp-mode company-c-headers chess ccls c-eldoc bongo arjen-grey-theme))
+   '(imenu-anywhere go-eldoc lush-theme tramp-theme nano-theme moe-theme lab-themes basic-theme gotham-theme clues-theme ample-theme afternoon-theme abyss-theme jazz-theme subatomic-theme cyberpunk-theme doom-themes almost-mono-themes gruber-darker-theme go-dlv bury-successful-compilation go-autocomplete auto-complete go-rename projectile crux selectrum dumb-jump go-complete move-text go-mode sublime-themes waher-theme good-scroll zenburn-theme yasnippet which-key use-package solarized-theme rustic rust-mode rtags ripgrep naysayer-theme monokai-theme monokai-alt-theme molokai-theme magit lsp-ui lsp-dart key-chord ivy irony iedit hover helm-xref helm-lsp helm-gtags god-mode glsl-mode ggtags evil-visual-mark-mode esup elcord csharp-mode company-c-headers chess ccls c-eldoc bongo arjen-grey-theme))
  '(pdf-view-midnight-colors '("#DCDCCC" . "#383838"))
  '(pos-tip-background-color "#32302f")
  '(pos-tip-foreground-color "#bdae93")
