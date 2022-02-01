@@ -6,7 +6,7 @@
  ("c:/Users/ameer/.emacs.d/" . "lisp/")
  ("c:/Users/ameer/" . ".emacs.d/")
  ("c:/Users/ameer/go/" . "bin/")
- ("d:/dev/" . "alaska/")
+ ("d:/dev/" . "ame/")
  ("d:/MinGW/include/" . "GL/")
  ("d:/MinGW/" . "include/")
  ("d:/C_Programs/" . "tmacs/")
@@ -15,8 +15,8 @@
 
 ;; ----- ido-work-directory-list -----
 (
- "d:/dev/alaska/"
  "d:/dev/ame/"
+ "d:/dev/alaska/"
  "d:/Notes/"
  "d:/C_Programs/tmacs/"
  "d:/C_Programs/traveller/"
@@ -43,25 +43,25 @@
 
 ;; ----- ido-work-file-list -----
 (
- "game.go"
- "main.go"
+ "GRTAGS"
  "main.c"
+ "main.go"
+ "game.go"
  "util.h"
  "passwords.txt"
  "c.bat"
  "chemistry_syllabus.txt"
  "chem"
  "mavien_levels.txt"
- "config.l"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("d:/dev/alaska/" (25077 44930 0 0) "util.go" "tools.go" "simulation.go" "res/" "notes/" "menu.go" "main.go" "levels.go" "init.go" "gui.go" "go.sum" "go.mod" "game.go" "catalogue.go" "c.bat" "bin/" ".git/" "../" "./")
+ ("d:/dev/ame/" (25078 42956 0 0) "util.h" "main.c" "line.h" "line.c" "GTAGS" "GRTAGS" "GPATH" "consolas.ttf" "c.bat" "buffer.h" "buffer.c" "bin/" ".git/" "../" "./")
 
- ("d:/dev/ame/" (25077 44507 0 0) "util.h" "main.c" "line.h" "line.c" "consolas.ttf" "c.bat" "bin/" ".git/" "../" "./")
+ ("c:/Users/ameer/" (25078 42875 0 0) "___spacemacs.emacs.d/" "_viminfo" "_.spacemacs.env" "_.spacemacs" "_.doom.d/" "vmlogs/" "vimfiles/" "Videos/" "test/" "Templates/" "Start Menu/" "SPACEMACS_.emacs.d/" "source/" "SendTo/" "Searches/" "Saved Games/" "Roaming/" "Recent/" "PrintHood/" "Pictures/" "path/" "OneDrive/" "ntuser.ini" "NTUSER.DAT{286afd5d-86ba-11eb-8557-00155d6377ec}.TMContainer00000000000000000002.regtrans-ms" "NTUSER.DAT{286afd5d-86ba-11eb-8557-00155d6377ec}.TMContainer00000000000000000001.regtrans-ms" "NTUSER.DAT{286afd5d-86ba-11eb-8557-00155d6377ec}.TM.blf" "ntuser.dat.LOG2" "ntuser.dat.LOG1" "NTUSER.DAT" "Nox_share/" "NetHood/" "My Documents/" "Music/" "MicrosoftEdgeBackups/" "Local Settings/" "Links/" "IntelGraphicsProfiles/" "Intel/" "go/" "Favorites/" "eclipse/" "Downloads/" "Documents/" "Desktop/" "DartEditor/" "Cookies/" "Contacts/" "Application Data/" "Apple/" "AppData/" "ansel/" "4coder/" "3D Objects/" ".vscode/" ".VirtualBox/" ".vimrc" ".tooling/" ".thumbnails/" ".templateengine/" ".rustup/" ".p2/" ".omnisharp/" ".nuget/" ".m2/" ".lemminx/" ".idlerc/" ".gvimrc" ".gradle/" ".gitconfig" ".git/" ".emacs.d/" ".emacs" ".eclipse/" ".dotnet/" ".dlv/" ".dartium/" ".config/" ".cargo/" ".cache/" ".BigNox/" "../" "./")
 
- ("c:/Users/ameer/" (25077 42907 0 0) "_viminfo" "_.swp" "_.swo" "_.swn" "_.swm" "_.emacs.d/" "_.doom.d/" "wowowow.c" "woop.c~" "woop.c" "weathericons.ttf" "vmlogs/" "vimfiles/" "Videos/" "vars" "thingo.txt" "thingo.c" "thing.txt" "thing.c~" "thing.c" "test]" "test.c" "test/" "temp~" "Templates/" "temp" "Start Menu/" "SPACEMACS_.emacs.d/" "source/" "SendTo/" "Searches/" "scratch_stuff.c" "scratch_buffer" "scratch.c~" "scratch.c" "Saved Games/" "Roaming/" "Recent/" "program.c" "PrintHood/" "Pictures/" "path/" "out.cpp" "OneDrive/" "octicons.ttf" "nuuid.ini" "ntuser.ini" "NTUSER.DAT{286afd5d-86ba-11eb-8557-00155d6377ec}.TMContainer00000000000000000002.regtrans-ms" "NTUSER.DAT{286afd5d-86ba-11eb-8557-00155d6377ec}.TMContainer00000000000000000001.regtrans-ms" "NTUSER.DAT{286afd5d-86ba-11eb-8557-00155d6377ec}.TM.blf" "ntuser.dat.LOG2" "ntuser.dat.LOG1" "NTUSER.DAT" "Nox_share/" "NetHood/" "mypixmap.png" "My Documents/" "Music/" "MicrosoftEdgeBackups/" "material-design-icons.ttf" "Local Settings/" "Links/" "IntelGraphicsProfiles/" "Intel/" "inst.ini" "inittk.ini" "GTAGS" "GRTAGS" "GPATH" "go/" "gamer.c" "game.c~" "game.c" "fontawesome.ttf" "file-icons.ttf" "Favorites/" "EMACS_TEMP~" "EMACS_TEMP" "eclipse/" "Downloads/" "Documents/" "Desktop/" "DartEditor/" "d4ac4633ebd6440fa397b84f1bc94a3c.7z" "Cookies/" "Contacts/" "Application Data/" "Apple/" "AppData/" "ansel/" "all-the-icons.ttf" "a.out" "a.exe" "4coder/" "3D Objects/" ".wowowow.c.un~" ".woop.c.un~" ".vscode/" ".VirtualBox/" ".vimrc" ".viminfo" ".tooling/" ".thumbnails/" ".thingo.txt.un~" ".thingo.c.un~" ".thing.txt.un~" ".thing.c.un~" ".templateengine/" ".spacemacs.env" ".spacemacs" ".rustup/" ".python_history" ".program.c.un~" ".p2/" ".out.cpp.un~" ".omnisharp/" ".nuget/" ".minttyrc" ".m2/" ".lemminx/" ".idlerc/" ".gvimrc" ".gradle/" ".gitconfig" ".git/" ".game.c.un~" ".emulator_console_auth_token" ".emacs~" ".emacs3~" ".emacs3" ".emacs.d/" ".emacs.bak" ".emacs" ".eclipse/" ".dotnet/" ".dlv/" ".dartium/" ".config/" ".cargo/" ".cache/" ".BigNox/" ".bash_history" "..vimrc.un~" "$tutor$" "#temp#" "#.emasc#" "../" "./")
+ ("d:/dev/alaska/" (25078 41650 0 0) "util.go" "tools.go" "simulation.go" "res/" "notes/" "menu.go" "main.go" "levels.go" "init.go" "gui.go" "go.sum" "go.mod" "game.go" "catalogue.go" "c.bat" "bin/" ".git/" "../" "./")
 
  ("d:/dev/" (25077 35111 0 0) "tspc/" "test/" "random/" "Processing/" "GunBlade/" "go/" "firefoxtab/" "ame/" "alaska/" "../" "./")
 
