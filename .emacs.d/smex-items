@@ -1,0 +1,42 @@
+
+;; ----- smex-history -----
+(
+ global-hl-line-mode
+ customize
+ load-theme
+ helm-swoop
+ customize-create-theme
+ customize-themes
+ helm-multi-swoop-projectile
+)
+
+;; ----- smex-data -----
+(
+ (grep . 3)
+ (projectile-ripgrep . 2)
+ (ftp . 1)
+ (switch-to-buffer . 1)
+ (helm-mini . 2)
+ (projectile-grep . 4)
+ (set-variable . 4)
+ (select-frame . 1)
+ (selectrum-mode . 1)
+ (customize . 4)
+ (my-grep . 1)
+ (helm-multi-files . 1)
+ (projectile-multi-occur . 3)
+ (helm-multi-occur-from-isearch . 10)
+ (multi-occur-in-matching-buffers . 1)
+ (helm-occur-from-isearch . 2)
+ (projectile-multi-isearch-files . 1)
+ (package-install . 2)
+ (helm-multi-swoop-current-mode . 1)
+ (helm-multi-swoop-projectile . 5)
+ (helm-swoop . 3)
+ (helm-multi-swoop-beginning-of-buffer . 1)
+ (package-delete . 1)
+ (customize-themes . 1)
+ (customize-create-theme . 1)
+ (load-theme . 5)
+ (global-hl-line-mode . 4)
+)
