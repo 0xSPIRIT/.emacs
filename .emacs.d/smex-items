@@ -1,19 +1,19 @@
 
 ;; ----- smex-history -----
 (
- global-hl-line-mode
+ evil-normal-state
  customize
- load-theme
- helm-swoop
- customize-create-theme
- customize-themes
- helm-multi-swoop-projectile
+ c-mode
+ evil-mode
+ ripgrep-regexp
+ my-grep
+ grep
 )
 
 ;; ----- smex-data -----
 (
- (grep . 3)
- (projectile-ripgrep . 2)
+ (grep . 6)
+ (projectile-ripgrep . 3)
  (ftp . 1)
  (switch-to-buffer . 1)
  (helm-mini . 2)
@@ -21,8 +21,8 @@
  (set-variable . 4)
  (select-frame . 1)
  (selectrum-mode . 1)
- (customize . 4)
- (my-grep . 1)
+ (customize . 5)
+ (my-grep . 4)
  (helm-multi-files . 1)
  (projectile-multi-occur . 3)
  (helm-multi-occur-from-isearch . 10)
@@ -39,4 +39,9 @@
  (customize-create-theme . 1)
  (load-theme . 5)
  (global-hl-line-mode . 4)
+ (repeat . 1)
+ (ripgrep-regexp . 3)
+ (evil-mode . 1)
+ (c-mode . 1)
+ (evil-normal-state . 1)
 )

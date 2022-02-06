@@ -22,10 +22,6 @@
 
 (setq default-directory "d:/dev/alaska/")
 
-;; Discord integration.
-(require 'elcord)
-(elcord-mode t)
-
 (defun insert-line-above()
   (interactive)
   (beginning-of-line)
@@ -44,10 +40,6 @@
   (setq indent-tabs-mode t)
   (setq tab-width 4)
 )
-
-(defun my-grep(regexp)
-  (interactive "sGrep For: ")
-  (grep (concat "grep -i -nH --null -e \"" regexp "\" *.go ")))
 
 (require 'dap-go)
 
@@ -83,12 +75,12 @@
 
 (global-set-key (kbd "C-;") 'company-complete)
 
-;(company-tng-configure-default)
-
 (global-set-key (kbd "<M-return>") 'yas-expand)
 
 (global-set-key [f12] 'lsp-find-definition)
 (global-set-key [C-f12] 'lsp-find-references)
+(global-set-key [C-f11] 'lsp-find-implementation)
+
 (global-set-key (kbd "C-.") 'lsp-find-definition)
 (global-set-key (kbd "C->") 'lsp-find-references)
 (global-set-key (kbd "C-<") 'lsp-find-implementation)
@@ -306,8 +298,7 @@
 (global-set-key [f6]    'run-program)
 (global-set-key [C-f6]  'set-program)
 
-(global-set-key [f10]   'my-grep)
-;(global-set-key [f10]   'projectile-ripgrep)
+(global-set-key [f10]   'projectile-ripgrep)
 (global-set-key [f11]   'open-cmd)
 (global-set-key [M-f12] 'open-folder)
 
@@ -402,7 +393,7 @@
  '(helm-ff-cache-mode t)
  '(helm-mode t)
  '(helm-swoop-speed-or-color nil)
- '(helm-swoop-use-line-number-face t)
+ '(helm-swoop-use-line-number-face t t)
  '(highlight-changes-colors '("#d3869b" "#b16286"))
  '(highlight-symbol-colors
    '("#522a41fa2b3b" "#3821432637ec" "#5bbe348b2bf5" "#483d36c73def" "#43c0418329b9" "#538f36232679" "#317a3ddc3e5d"))
@@ -430,7 +421,7 @@
    '("#fb4933" "#d65d0e" "#d79921" "#747400" "#b9b340" "#14676b" "#689d6a" "#d3869b" "#b16286"))
  '(package-native-compile t)
  '(package-selected-packages
-   '(helm-swoop lsp-mode json-mode yasnippet-snippets imenu-anywhere go-eldoc lush-theme tramp-theme nano-theme moe-theme lab-themes basic-theme gotham-theme clues-theme ample-theme afternoon-theme abyss-theme jazz-theme subatomic-theme cyberpunk-theme doom-themes almost-mono-themes gruber-darker-theme go-dlv bury-successful-compilation go-autocomplete auto-complete go-rename projectile crux selectrum go-complete move-text go-mode sublime-themes waher-theme good-scroll zenburn-theme yasnippet which-key use-package solarized-theme rustic rust-mode rtags ripgrep naysayer-theme monokai-theme monokai-alt-theme molokai-theme magit lsp-ui lsp-dart key-chord ivy irony iedit hover helm-xref helm-lsp helm-gtags god-mode glsl-mode ggtags evil-visual-mark-mode esup elcord csharp-mode company-c-headers chess ccls c-eldoc bongo arjen-grey-theme))
+   '(helm-swoop lsp-mode json-mode yasnippet-snippets imenu-anywhere go-eldoc lush-theme tramp-theme nano-theme moe-theme lab-themes basic-theme gotham-theme clues-theme ample-theme afternoon-theme abyss-theme jazz-theme subatomic-theme cyberpunk-theme doom-themes almost-mono-themes gruber-darker-theme go-dlv bury-successful-compilation go-autocomplete auto-complete go-rename projectile crux selectrum go-complete move-text go-mode sublime-themes waher-theme good-scroll zenburn-theme yasnippet which-key use-package solarized-theme rustic rust-mode rtags ripgrep naysayer-theme monokai-theme monokai-alt-theme molokai-theme magit lsp-ui lsp-dart key-chord ivy irony iedit hover helm-xref helm-lsp helm-gtags god-mode glsl-mode ggtags evil-visual-mark-mode esup csharp-mode company-c-headers chess ccls c-eldoc bongo arjen-grey-theme))
  '(pdf-view-midnight-colors '("#DCDCCC" . "#383838"))
  '(pos-tip-background-color "#32302f")
  '(pos-tip-foreground-color "#bdae93")
