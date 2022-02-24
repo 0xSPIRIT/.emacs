@@ -19,10 +19,20 @@
  '(font-lock-warning-face ((t (:foreground "red" :bold t ))))
  '(mode-line ((t (:foreground "#ece09f" :background "#383634"))))
  '(mode-line-inactive ((t (:inherit mode-line :background "#282828" :foreground "gray40" :weight light))))
+ '(company-echo-common ((t (:foreground "gold"))))
+ '(company-preview ((t (:background "gray18" :foreground "wheat"))))
+ '(company-preview-common ((t (:inherit company-preview :foreground "gold"))))
+ '(company-scrollbar-bg ((t (:background "c6c3b4"))))
+ '(company-scrollbar-fg ((t (:background "7f7d69"))))
+ '(company-tooltip ((t (:background "#353535" :foreground "white"))))
+ '(company-tooltip-annotation ((t (:foreground "gray"))))
+ '(company-tooltip-selection ((t (:background "gray50"))))
  '(helm-candidate-number ((t (:extend t :background "gray40" :foreground "black"))))
  '(helm-source-header ((t (:extend t :background "gray10" :foreground "white" :weight bold :height 1.3 :family "Sans Serif"))))
- '(helm-swoop-target-line-face ((t (:background "gray25" :foreground "#fdf4c1"))))
- '(helm-swoop-target-word-face ((t (:background "NavajoWhite4" :foreground "#ffffff"))))
+ '(helm-swoop-target-line-face ((t (:background "gray25" :foreground "#fdf4c1")))) ; Remove these two if you don't have helm-swoop.
+ '(helm-swoop-target-word-face ((t (:background "NavajoWhite4" :foreground "#ffffff")))) ; ^
+ '(highlight ((t (:background "#2f3813"))))
+ '(link ((t (:foreground "gray65" :underline t))))
 )
 
 (provide-theme 'coffee)
