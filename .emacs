@@ -18,11 +18,62 @@
 
 (setq inhibit-startup-screen t)
 
+(setq auto-revert-interval 0.01)
+(auto-revert-mode t)
+
+(defun split-window-sensibly-prefer-horizontal (&optional window)
+"Based on split-window-sensibly, but designed to prefer a horizontal split,
+i.e. windows tiled side-by-side."
+  (let ((window (or window (selected-window))))
+    (or (and (window-splittable-p window t)
+         ;; Split window horizontally
+         (with-selected-window window
+           (split-window-right)))
+    (and (window-splittable-p window)
+         ;; Split window vertically
+         (with-selected-window window
+           (split-window-below)))
+    (and
+         ;; If WINDOW is the only usable window on its frame (it is
+         ;; the only one or, not being the only one, all the other
+         ;; ones are dedicated) and is not the minibuffer window, try
+         ;; to split it horizontally disregarding the value of
+         ;; `split-height-threshold'.
+         (let ((frame (window-frame window)))
+           (or
+            (eq window (frame-root-window frame))
+            (catch 'done
+              (walk-window-tree (lambda (w)
+                                  (unless (or (eq w window)
+                                              (window-dedicated-p w))
+                                    (throw 'done nil)))
+                                frame)
+              t)))
+     (not (window-minibuffer-p window))
+     (let ((split-width-threshold 0))
+       (when (window-splittable-p window t)
+         (with-selected-window window
+           (split-window-right))))))))
+
+(defun split-window-really-sensibly (&optional window)
+  (let ((window (or window (selected-window))))
+    (if (> (window-total-width window) (* 2 (window-total-height window)))
+        (with-selected-window window (split-window-sensibly-prefer-horizontal window))
+      (with-selected-window window (split-window-sensibly window)))))
+(setq
+   split-height-threshold 4
+   split-width-threshold 40 
+   split-window-preferred-function 'split-window-really-sensibly)
+
 ;; (set-face-attribute 'default nil :height 100)
 
 (require 'dash-functional) ; Gets rid of an lsp error.
 
-(setq default-directory "d:/dev/")
+;; auto refresh dired when file changes
+(add-hook 'dired-mode-hook 'auto-revert-mode)
+
+;; Compilation
+(setq compilation-scroll-output t)
 (setq compilation-ask-about-save nil)
 
 (defun insert-line-above()
@@ -84,7 +135,7 @@
 (define-key company-active-map (kbd "C-n") 'company-select-next)
 (define-key company-active-map (kbd "C-p") 'company-select-previous)
 
-(global-set-key (kbd "C-S-c") 'company-complete)
+(global-set-key (kbd "C-S-i") 'company-complete)
 
 (global-set-key (kbd "<M-return>") 'yas-expand)
 
@@ -101,14 +152,18 @@
 
 (setq vc-handled-backends ()) ;; Disable git integration
 
-(ivy-mode t)
+(ido-mode t)
+(setq ido-enable-flex-matching t)
+
+; Seriously, what the fuck is the point of having this on?
+(setq ido-auto-merge-work-directories-length -1)
 
 (menu-bar-mode 0)
 (tool-bar-mode 0)
 (scroll-bar-mode 0)
 (blink-cursor-mode 1)
 ;(helm-mode t) ; This takes precedence over selectrum
-;; (selectrum-mode t)
+;(selectrum-mode 0)
 (yas-global-mode 1)
 (electric-pair-mode t)
 
@@ -127,9 +182,6 @@
 (global-set-key (kbd "C-c C-c") 'comment-or-uncomment-region)
 (global-set-key (kbd "C-c C-j") 'eval-last-sexp)
 (global-set-key (kbd "C-c j") 'eval-region)
-
-;; Compilation autoscroll
-(setq compilation-scroll-output t)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
@@ -290,10 +342,16 @@
       (lambda () ""))
 (setq helm-swoop-prompt "Search: ")
 
+(global-set-key [C-f11] 'toggle-frame-fullscreen)
+
 ;; Kill text without adding to kill ring.
 ;; Use M-<backspace> for vanilla behaviour.
 (global-set-key (kbd "C-<backspace>") 'backward-delete-word)
 (global-set-key (kbd "M-d") 'forward-delete-word)
+
+(global-set-key (kbd "C-S-c") 'ace-jump-char-mode)
+(global-set-key (kbd "C-S-w") 'ace-jump-word-mode)
+(global-set-key (kbd "C-S-l") 'ace-jump-line-mode)
 
 (define-key isearch-mode-map (kbd "M-s o") 'helm-occur-from-isearch)
 (global-set-key (kbd "C-c u") 'helm-multi-swoop-projectile)
@@ -314,7 +372,7 @@
 
 (global-set-key (kbd "M-x") 'execute-extended-command)
 (global-set-key (kbd "C-c M-x") 'execute-extended-command) ; Old M-x
-(global-set-key (kbd "C-x b") 'helm-mini)
+(global-set-key (kbd "C-x b") 'switch-to-buffer)
 
 (global-set-key [f8] 'goto-init-file)
 (global-set-key [M-f8] 'reload-init-file)
@@ -382,7 +440,7 @@
 (global-set-key (kbd "C-S-f") 'forward-sexp)
 (global-set-key (kbd "C-S-b") 'backward-sexp)
 
-(global-set-key (kbd "C-o") 'projectile-find-file)
+(global-set-key (kbd "C-o") 'find-file)
 
 (global-set-key (kbd "C-u") 'other-window)
 
@@ -430,7 +488,7 @@
  '(helm-completion-style 'emacs)
  '(helm-ff-cache-mode t)
  '(helm-swoop-speed-or-color nil)
- '(helm-swoop-use-line-number-face t)
+ '(helm-swoop-use-line-number-face t t)
  '(highlight-changes-colors '("#d3869b" "#b16286"))
  '(highlight-symbol-colors
    '("#522a41fa2b3b" "#3821432637ec" "#5bbe348b2bf5" "#483d36c73def" "#43c0418329b9" "#538f36232679" "#317a3ddc3e5d"))
@@ -449,7 +507,6 @@
  '(hl-fg-colors
    '("#282828" "#282828" "#282828" "#282828" "#282828" "#282828" "#282828" "#282828"))
  '(hl-paren-colors '("#689d6a" "#d79921" "#458588" "#b16286" "#98971a"))
- '(ivy-mode t)
  '(linum-format " %5i ")
  '(lsp-ui-doc-border "#bdae93")
  '(magit-diff-use-overlays nil)
@@ -460,7 +517,7 @@
    '("#fb4933" "#d65d0e" "#d79921" "#747400" "#b9b340" "#14676b" "#689d6a" "#d3869b" "#b16286"))
  '(package-native-compile t)
  '(package-selected-packages
-   '(vterm multiple-cursors helm-swoop lsp-mode json-mode yasnippet-snippets imenu-anywhere go-eldoc lush-theme tramp-theme nano-theme moe-theme lab-themes basic-theme gotham-theme clues-theme ample-theme afternoon-theme abyss-theme jazz-theme subatomic-theme cyberpunk-theme doom-themes almost-mono-themes gruber-darker-theme go-dlv bury-successful-compilation go-autocomplete auto-complete go-rename projectile crux selectrum go-complete move-text go-mode sublime-themes waher-theme good-scroll zenburn-theme yasnippet which-key use-package solarized-theme rustic rust-mode rtags ripgrep naysayer-theme monokai-theme monokai-alt-theme molokai-theme magit lsp-ui lsp-dart key-chord ivy irony iedit hover helm-xref helm-lsp helm-gtags god-mode glsl-mode ggtags evil-visual-mark-mode esup csharp-mode company-c-headers chess ccls c-eldoc bongo arjen-grey-theme))
+   '(ace-jump-mode vterm multiple-cursors helm-swoop lsp-mode json-mode yasnippet-snippets imenu-anywhere go-eldoc lush-theme tramp-theme nano-theme moe-theme lab-themes basic-theme gotham-theme clues-theme ample-theme afternoon-theme abyss-theme jazz-theme subatomic-theme cyberpunk-theme doom-themes almost-mono-themes gruber-darker-theme go-dlv bury-successful-compilation go-autocomplete auto-complete go-rename projectile crux selectrum go-complete move-text go-mode sublime-themes waher-theme good-scroll zenburn-theme yasnippet which-key use-package solarized-theme rustic rust-mode rtags ripgrep naysayer-theme monokai-theme monokai-alt-theme molokai-theme magit lsp-ui lsp-dart key-chord ivy irony iedit hover helm-xref helm-lsp helm-gtags god-mode glsl-mode ggtags evil-visual-mark-mode esup csharp-mode company-c-headers chess ccls c-eldoc bongo arjen-grey-theme))
  '(pdf-view-midnight-colors '("#DCDCCC" . "#383838"))
  '(pos-tip-background-color "#32302f")
  '(pos-tip-foreground-color "#bdae93")
@@ -505,7 +562,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:background nil :family "Consolas" :foundry "outline" :slant normal :weight normal :height 120 :width normal))))
+ '(default ((t (:background nil :family "Liberation Mono" :foundry "outline" :slant normal :weight normal :height 102 :width normal))))
  '(company-echo-common ((t (:foreground "gold"))))
  '(company-preview ((t (:background "gray18" :foreground "wheat"))))
  '(company-preview-common ((t (:inherit company-preview :foreground "gold"))))
@@ -516,7 +573,11 @@
  '(company-tooltip-common ((t (:foreground "gold"))))
  '(company-tooltip-common-selection ((t (:inherit wheat))))
  '(company-tooltip-selection ((t (:background "gray30"))))
+ '(helm-bookmark-addressbook ((t (:extend t :foreground "tomato"))))
  '(helm-buffer-directory ((t (:extend t :background "gray20" :foreground "white"))))
+ '(helm-buffer-file ((t (:foreground "white"))))
+ '(helm-buffer-process ((t (:extend t :foreground "gray40"))))
+ '(helm-buffer-size ((t (:extend t :foreground "dim gray"))))
  '(helm-candidate-number ((t (:extend t :background "gray40" :foreground "black"))))
  '(helm-ff-directory ((t (:extend t :background "gray20" :foreground "white"))))
  '(helm-ff-dirs ((t (:background "gray20" :foreground "ivory"))))
@@ -529,7 +590,11 @@
  '(helm-swoop-target-line-face ((t (:background "gray25" :foreground "#fdf4c1"))))
  '(helm-swoop-target-word-face ((t (:background "NavajoWhite4" :foreground "#ffffff"))))
  '(highlight ((t (:background "gray20"))))
+ '(ido-only-match ((t (:foreground "green"))))
+ '(ido-subdir ((t (:foreground "burlywood"))))
  '(ivy-current-match ((t (:extend t :background "seashell4" :foreground "black"))))
  '(link ((t (:foreground "gray65" :underline t))))
+ '(minibuffer-prompt ((t (:foreground "#cea03d" :weight normal))))
+ '(scroll-bar ((t (:foreground "black"))))
  '(selectrum-current-candidate ((t (:extend t :background "gray30")))))
 (put 'upcase-region 'disabled nil)
