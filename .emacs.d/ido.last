@@ -2,36 +2,41 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("d:/dev/alaska/" . "src/")
  ("d:/school/" . "eng a/")
  ("c:/Users/ameer/.emacs.d/" . "lisp/")
  ("c:/Users/ameer/" . ".emacs.d/")
  ("c:/Users/ameer/go/" . "bin/")
- ("d:/dev/" . "ame/")
+ ("d:/dev/" . "alaska/")
  ("d:/MinGW/include/" . "GL/")
  ("d:/MinGW/" . "include/")
  ("d:/C_Programs/" . "tmacs/")
- ("d:/" . "dev/")
+ ("d:/" . "Notes/")
 )
 
 ;; ----- ido-work-directory-list -----
 (
- "d:/dev/ame/"
- "d:/dev/alaska/"
+ "d:/dev/alaska/src/"
  "d:/Notes/"
+ "c:/Users/ameer/"
+ "d:/dev/"
+ "d:/dev/old_alaska/"
+ "c:/Users/ameer/.emacs.d/"
+ "d:/dev/alaska/res/"
+ "d:/dev/alaska/bin/"
+ "d:/dev/alaska/"
+ "d:/"
+ "d:/dev/ame/"
  "d:/C_Programs/tmacs/"
  "d:/C_Programs/traveller/"
  "d:/C_Programs/stw/"
  "d:/school/eng a/"
  "d:/dev/firefoxtab/"
  "d:/dev/tspc/"
- "c:/Users/ameer/"
- "d:/dev/alaska/res/"
  "c:/Users/ameer/.emacs.d/lisp/"
- "c:/Users/ameer/.emacs.d/"
  "d:/dev/test/"
  "d:/dev/GunBlade/"
  "d:/Programs/Go/src/math/rand/"
- "d:/dev/alaska/bin/"
  "d:/C_Programs/"
  "d:/C_Programs/CHIP-8/"
  "d:/C_Programs/bf/"
@@ -43,37 +48,55 @@
 
 ;; ----- ido-work-file-list -----
 (
- "GRTAGS"
- "main.c"
+ "profile.bat"
+ "grabber.go"
  "main.go"
- "game.go"
- "util.h"
+ "structure.go"
  "passwords.txt"
- "c.bat"
- "chemistry_syllabus.txt"
- "chem"
- "mavien_levels.txt"
+ "game.go"
+ "sim.go"
+ "carver.go"
+ ".emacs"
+ "chipper.go"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("d:/dev/ame/" (25078 42956 0 0) "util.h" "main.c" "line.h" "line.c" "GTAGS" "GRTAGS" "GPATH" "consolas.ttf" "c.bat" "buffer.h" "buffer.c" "bin/" ".git/" "../" "./")
+ ("c:/Users/ameer/" (25161 14400 0 0) "_viminfo" "_.spacemacs.env" "_.spacemacs" "_.doom.d/" "vmlogs/" "vimfiles/" "Videos/" "test/" "Templates/" "Start Menu/" "source/" "SendTo/" "Searches/" "Saved Games/" "Roaming/" "Recent/" "PrintHood/" "Pictures/" "path/" "OneDrive/" "ntuser.ini" "NTUSER.DAT{286afd5d-86ba-11eb-8557-00155d6377ec}.TMContainer00000000000000000002.regtrans-ms" "NTUSER.DAT{286afd5d-86ba-11eb-8557-00155d6377ec}.TMContainer00000000000000000001.regtrans-ms" "NTUSER.DAT{286afd5d-86ba-11eb-8557-00155d6377ec}.TM.blf" "ntuser.dat.LOG2" "ntuser.dat.LOG1" "NTUSER.DAT" "Nox_share/" "NetHood/" "My Documents/" "Music/" "MicrosoftEdgeBackups/" "Local Settings/" "Links/" "IntelGraphicsProfiles/" "Intel/" "go/" "Favorites/" "eclipse/" "Downloads/" "Documents/" "Desktop/" "DartEditor/" "Cookies/" "Contacts/" "Application Data/" "Apple/" "AppData/" "ansel/" "3D Objects/" ".VirtualBox/" ".vimrc" ".viminfo" ".tooling/" ".thumbnails/" ".templateengine/" ".p2/" ".omnisharp/" ".m2/" ".lesshst" ".lemminx/" ".idlerc/" ".gvimrc" ".gitconfig" ".git/" ".emacs.d/" ".emacs" ".eclipse/" ".dotnet/" ".dlv/" ".dartium/" ".config/" ".cargo/" ".cache/" ".BigNox/" ".bash_history" "../" "./")
 
- ("c:/Users/ameer/" (25078 42875 0 0) "___spacemacs.emacs.d/" "_viminfo" "_.spacemacs.env" "_.spacemacs" "_.doom.d/" "vmlogs/" "vimfiles/" "Videos/" "test/" "Templates/" "Start Menu/" "SPACEMACS_.emacs.d/" "source/" "SendTo/" "Searches/" "Saved Games/" "Roaming/" "Recent/" "PrintHood/" "Pictures/" "path/" "OneDrive/" "ntuser.ini" "NTUSER.DAT{286afd5d-86ba-11eb-8557-00155d6377ec}.TMContainer00000000000000000002.regtrans-ms" "NTUSER.DAT{286afd5d-86ba-11eb-8557-00155d6377ec}.TMContainer00000000000000000001.regtrans-ms" "NTUSER.DAT{286afd5d-86ba-11eb-8557-00155d6377ec}.TM.blf" "ntuser.dat.LOG2" "ntuser.dat.LOG1" "NTUSER.DAT" "Nox_share/" "NetHood/" "My Documents/" "Music/" "MicrosoftEdgeBackups/" "Local Settings/" "Links/" "IntelGraphicsProfiles/" "Intel/" "go/" "Favorites/" "eclipse/" "Downloads/" "Documents/" "Desktop/" "DartEditor/" "Cookies/" "Contacts/" "Application Data/" "Apple/" "AppData/" "ansel/" "4coder/" "3D Objects/" ".vscode/" ".VirtualBox/" ".vimrc" ".tooling/" ".thumbnails/" ".templateengine/" ".rustup/" ".p2/" ".omnisharp/" ".nuget/" ".m2/" ".lemminx/" ".idlerc/" ".gvimrc" ".gradle/" ".gitconfig" ".git/" ".emacs.d/" ".emacs" ".eclipse/" ".dotnet/" ".dlv/" ".dartium/" ".config/" ".cargo/" ".cache/" ".BigNox/" "../" "./")
+ ("d:/dev/alaska/src/" (25161 13609 0 0) "util.go" "title.go" "structure.go" "src.test.exe" "slicer.go" "sim.go" "profile002.png" "profile001.png" "profile.bat" "prelevel.go" "placer.go" "panel.go" "molder.go" "main_test.go" "main.go" "level.go" "init.go" "gui.go" "grabber.go" "game.go" "fast_rand.go" "chisel.go" "chipper.go" "build.bat" "../" "./")
 
- ("d:/dev/alaska/" (25078 41650 0 0) "util.go" "tools.go" "simulation.go" "res/" "notes/" "menu.go" "main.go" "levels.go" "init.go" "gui.go" "go.sum" "go.mod" "game.go" "catalogue.go" "c.bat" "bin/" ".git/" "../" "./")
+ ("d:/Notes/" (25159 59187 0 0) "waterlevel.org" "update.txt" "unix-password.txt" "todo_sba.txt" "todo_geo" "todo_full.org" "todo.txt" "todo.org" "thoughts.txt" "thought.txt" "thing.txt" "test.txt" "test" "td_notes.txt" "td/" "stuff.txt" "spotify_password" "spiritedwolfpass.txt" "spacegame.org" "sources" "soundcloudpass" "some_ideas.txt" "something" "somethin.txt" "sdfsdfsdf" "sdfsdf.txt" "sculpture" "random.txt" "programming_notes.txt" "procon" "physics.txt" "physics-labs-to-print" "phsics_ir" "passwords.txt" "ost3.txt" "note_7_28.txt" "notes_august_9.txt" "notes_august_7.txt" "notes_august_12.txt" "note2.txt" "note.txt" "note" "morning.txt" "monday" "mitosis.txt" "mitosis & meiosis.txt" "mavien_tracks.txt" "mavien_thing.txt" "mavien_themes.txt" "mavien_test.txt" "mavien_structure.txt" "mavien_story.txt" "mavien_sounds.txt" "mavien_scratch.txt" "mavien_playtest_notes.txt" "mavien_levels.txt" "mavien_fixes.txt" "mavien_final_chapter.txt" "mavien_dreams.txt" "mavien_dialogue_other.txt" "mavien_dialogue.txt~" "mavien_dialogue.txt" "mavien_cutscenes.txt~" "mavien_cutscenes.txt" "mavien_characters.txt" "mavien_bugs.txt" "mavien_beginning_cutscene.txt" "mavien_audio.txt" "mavien_attribution.txt" "mavien_art_notes.txt" "mavien_art.txt" "mavien_ambience.txt" "mavien_alternate_opening.txt" "mavien_alternate_ending.txt" "mavien.txt" "mavien-trailer" "magnesium.org" "log.txt" "langs.org" "it.txt" "IT/" "improvements.txt" "improvements.org" "ideas.txt" "gunblade2.txt" "goodies.txt" "geography.txt" "game_ideas.txt" "fuck.txt" "english_oral_speech_plan.txt" "dialogue" "df" "d.txt" "csharp_notes.txt" "chem_revise" "chem_asdf.txt" "chemistry_syllabus.txt" "chem-sum-275.txt" "chem" "blade_todo.txt" "blade_document.txt" "art.txt" "alaska_bond_ideas.txt" "alaska.txt" "8.19.2020.note.txt" "8.18.2020.note.txt" "3.15.2022.txt" "2.12.2022.txt" "#notes_september_26.txt#" "../" "./")
 
- ("d:/dev/" (25077 35111 0 0) "tspc/" "test/" "random/" "Processing/" "GunBlade/" "go/" "firefoxtab/" "ame/" "alaska/" "../" "./")
+ ("c:/Users/ameer/Desktop/Random/" (25159 60747 0 0) "XLaunch.lnk" "wheelscript.ahk" "Virtual Stock Market Game.pdf" "trumpet.png" "Tracetable.xlsx" "Trace Table.xlsx" "trace table.pdf" "timetable2.png" "timetable.png" "THUMBNAIL.png" "thingo_bg.png" "thing.png" "thing.aseprite" "The Mixing Blueprint.pdf" "The Mastering Blueprint.pdf" "td.txt" "TD Portfolio - Self Assessment.docx" "sports_files/" "sports.html" "Sif_pfp.png" "ShareX.lnk" "sdfsdfsdf.png" "sdfsdfsdf.pdn" "sdfsdf.png" "screenshots/" "screenshot8.png" "screenshot7.png" "screenshot6.png" "screenshot5.png" "screenshot4.png" "screenshot3.png" "screenshot2.png" "screenshot1.png" "Screenshot 2022-02-24 235342.png" "ScpToolkit Updater.lnk" "royal castle.png" "Roll Call Procedures for online classes.pdf" "ReSwitch.lnk" "Red Dead Redemption 2.lnk" "ps3 pass.txt" "profile.png" "ppp/" "points.png" "Physics Lab.docx" "PeaZip.lnk" "palette/" "paint.net.lnk" "OpenHardwareMonitor/" "Old Firefox Data/" "Not For Broadcast.lnk" "New folder/" "main.pas" "Mail Merge.xlsx" "Mail Merge.docx" "Mail Merge Total.docx" "Low Specs Experience Lite.lnk" "level crit.txt" "L.A. Noire - The Complete Edition.lnk" "images/" "iamge.docx" "HVC IT  SBA - Sport Camp FINAL.pdf" "house of haunt.png" "heehee/" "Grand Theft Auto IV - The Complete Edition.lnk" "Google Earth Pro.lnk" "Google Classroom Instructions for Students 2021-2022.pdf" "global_hotkeys.ahk" "geo_test.jpg" "geography_map.png" "geograhpy_map.pdn" "geo.png" "geo map.png" "geo map.pdn" "flyer.psd" "flyer.png" "flowchart.png" "Factorio.lnk" "ensmile.png" "English SBA.docx" "emacs daemon.bat" "e.png" "CSEC Biology Revision Guide Answers.pdf" "COVID-19 Vaccination Pre-Registration Form - 2nd Dose - Jul 2021 - FINAL.pdf" "Cir Memo No 8 Reopening of School October 2021.pdf" "chem_hw" "caps2ctrl.ahk" "cap2ctrl.ahk" "business card.png" "bugs.txt" "box and whisker deaths haiti.png" "box and whisker deaths cuba.png" "box and whisker cases haiti.png" "box and whisker cases cuba.png" "Books/" "blender/" "barbados may-june 2021.xlsx" "BAD WOLF.jpg" "Backup/" "asdfasdfasdfasdfasdf.png" "American Truck Simulator.lnk" "American Truck Simulator (x86).lnk" "Ameer Reza Ali Geog SBA.docx" "Ameer Ali - International Standards.docx" "Ameer Ali - Fire and FireFighting Portfolio Question.docx" "album.png" "album.pdn" "Alaska.mp4" "Add Maths SBA Per Month.xlsx" "Add Math SBA.xlsx" "1942.png" ".emacs~" ".emacs" "../" "./")
 
- ("d:/dev/alaska/res/" (25077 15259 0 0) "timesi.ttf" "times.ttf" "sucker.png" "slicer.png" "serife.fon" "mixer.png" "levels.txt" "grabber.png" "furnace.png" "freezer.png" "couri.ttf" "coure.fon" "courbi.ttf" "courbd.ttf" "cour.ttf" "consola.ttf" "comic.ttf" "carver.png" "bottle.png" "beaker.png" "barrier.png" "../" "./")
+ ("c:/Users/ameer/Desktop/" (25159 59781 0 0) "sba.xlsx" "SBA Plan.docx" "Random/" "Physics Lab.pdf" "MSI Afterburner.lnk" "litemacs.bat" "Flyer.docx" "flash drive stuff/" "ELDEN RING.lnk" "desktop.ini" "breaking.txt" "Ameer Reza Ali Geog SBA.pdf" "../" "./")
 
- ("d:/dev/alaska/bin/" (25077 14412 0 0) "zlib1.dll" "SDL2_ttf.dll" "SDL2_image.dll" "SDL2.dll" "libwebp-7.dll" "libtiff-5.dll" "libpng16-16.dll" "libjpeg-9.dll" "libfreetype-6.dll" "alaska.exe" "../" "./")
+ ("d:/dev/" (25159 57589 0 0) "useful/" "pfp/" "old_alaska/" "magic/" "GunBlade/" "freight/" "ame/" "alaska/" "../" "./")
 
- ("c:/Users/ameer/.emacs.d/" (25077 14632 0 0) "url/" "transient/" "them-theme.el" "taylor-theme.el" "spiritwolf-theme.el" "snippets/" "server/" "semanticdb/" "recentf" "quartz-theme-theme.el" "projectile.cache" "projectile-bookmarks.eld" "profile-dotemacs.el" "network-security.data" "lisp/" "ido.last~" "ido.last" "graham-modififed-theme.el" "Graham Modified-theme.el" "gpl-mode.el~" "gpl-mode.el" "eshell/" "elpa/" "eln-cache/" "ede-projects.el" "bookmarks" "auto-save-list/" "ac-comphist.dat" ".lsp-session-v1" ".extension/" ".dap-breakpoints" "#quartz-theme-theme.el#" "../" "./")
+ ("c:/Users/ameer/.emacs.d/" (25158 18730 0 0) "url/" "transient/" "taylor-theme.el" "spiritwolf-theme.el" "snippets/" "smex-items" "server/" "semanticdb/" "recentf" "quartz-theme-theme.el" "projectile.cache" "projectile-bookmarks.eld" "profile-dotemacs.el" "network-security.data" "lisp/" "ido.last~" "ido.last" "graham-modififed-theme.el" "Graham Modified-theme.el" "gpl-mode.el~" "gpl-mode.el" "eshell/" "elpa/" "eln-cache/" "ede-projects.el" "drax-theme.el" "coffee-theme.el" "bookmarks" "auto-save-list/" "ac-comphist.dat" ".lsp-session-v1" ".extension/" ".dap-breakpoints" ".cache/" "#quartz-theme-theme.el#" "#coffee-theme.el#" "../" "./")
+
+ ("d:/dev/GunBlade/" (25158 13846 0 0) "zlib1.dll" "util.go" "todo.txt" "res/" "player.go" "notes/" "note.txt" "main.go" "libpng16-16.dll" "guns.txt" "gungame.exe" "go.sum" "go.mod" "gamestates.go" "game.go" "entity.go" "enemy.go" "draw.go" "c.bat" "actions.go" ".git/" "../" "./")
+
+ ("d:/dev/alaska/bin/" (25158 5206 0 0) "zlib1.dll" "SDL2_ttf.dll" "SDL2_image.dll" "SDL2.dll" "libwebp-7.dll" "libtiff-5.dll" "libpng16-16.dll" "libjpeg-9.dll" "libfreetype-6.dll" "alaska.exe" "../" "./")
+
+ ("d:/dev/freight/" (25158 14217 0 0) "src/" "res/" "go.mod" "bin/" ".git/" "../" "./")
+
+ ("d:/dev/freight/src/" (25158 14229 0 0) "main.go" "build.bat" "../" "./")
+
+ ("d:/dev/old_alaska/" (25156 47380 0 0) "util.go" "tools.go" "simulation.go" "res/" "notes/" "menu.go" "main.go" "levels.go" "init.go" "gui.go" "go.sum" "go.mod" "game.go" "catalogue.go" "c.bat" "bin/" ".git/" "../" "./")
+
+ ("d:/Programs/Go/src/math/rand/" (25138 23656 0 0) "zipf.go" "rng.go" "regress_test.go" "rand_test.go" "rand.go" "race_test.go" "normal.go" "gen_cooked.go" "export_test.go" "exp.go" "example_test.go" "../" "./")
+
+ ("d:/dev/tspc/" (25096 20115 0 0) "util.go" "tspc.exe" "terminal.go" "main.go" "go.sum" "go.mod" "consola.ttf" "c.bat" "../" "./")
+
+ ("d:/dev/ame/" (25156 35528 0 0) "code/" "bin/" ".git/" "../" "./")
+
+ ("d:/dev/alaska/res/" (25157 7617 0 0) "tool_slicer.png" "tool_placer.png" "tool_molder.png" "tool_grabber.png" "tool_chisel.png" "tool_chipper.png" "tool_carver.png" "times.ttf" "Teeny.ttf" "prelevel_background.png" "level.png" "gui_background.png" "cour.ttf" "continue.png" "consola.ttf" "carver.png" "../" "./")
+
+ ("d:/dev/alaska/" (25156 59784 0 0) "src/" "res/" "go.sum" "go.mod" "bin/" ".vscode/" ".git/" "../" "./")
 
  ("c:/Users/ameer/go/pkg/mod/github.com/veandco/go-sdl2@v0.4.10/sdl/" (24912 1575 0 0) "vulkan.go" "video_test.go" "video.go" "version.go" "touch.go" "TODO.md" "timer_test.go" "timer.go" "thread.go" "syswm_x11.go" "syswm_windows.go" "syswm_vivante.go" "syswm_uikit.go" "syswm_dfb.go" "syswm_cocoa.go" "syswm.go" "system_android.go" "system.go" "sysrender.go" "surface_test.go" "surface.go" "struct_test.go" "sensor.go" "sdl_wrapper.h" "sdl_test.go" "sdl_cgo_static.go" "sdl_cgo.go" "sdl.go" "scancode.go" "rwops.go" "render_test.go" "render.go" "rect_test.go" "rect.go" "power_test.go" "power.go" "pixels_test.go" "pixels.go" "mutex.go" "mouse.go" "log_test.go" "log.h" "log.go" "log.c" "loadso.go" "keycode.go" "keyboard.go" "joystick.go" "hints_test.go" "hints.h" "hints.go" "hints.c" "helpers.go" "haptic.go" "gesture.go" "gamecontroller.go" "filesystem_test.go" "filesystem.go" "events_test.go" "events.h" "events.go" "events.c" "error.go" "endian.go" "cpuinfo_test.go" "cpuinfo.go" "clipboard_test.go" "clipboard.go" "blendmode.go" "audio_test.go" "audio.go" "../" "./")
-
- ("d:/Notes/" (25075 11753 0 0) "waterlevel.org" "update.txt" "unix-password.txt" "todo_geo" "todo_full.org" "todo.txt" "todo.org" "thought.txt" "thing.txt" "test.txt" "test" "td_notes.txt" "td/" "stuff.txt" "spotify_password" "spiritedwolfpass.txt" "spacegame.org" "sources" "soundcloudpass" "some_ideas.txt" "something" "somethin.txt" "sdfsdfsdf" "sculpture" "random.txt" "programming_notes.txt" "procon" "phsics_ir" "passwords.txt" "ost3.txt" "note_7_28.txt" "notes_august_9.txt" "notes_august_7.txt" "notes_august_12.txt" "note.txt" "note" "monday" "mitosis.txt" "mavien_tracks.txt" "mavien_thing.txt" "mavien_themes.txt" "mavien_test.txt" "mavien_structure.txt" "mavien_story.txt" "mavien_sounds.txt" "mavien_scratch.txt" "mavien_playtest_notes.txt" "mavien_levels.txt" "mavien_final_chapter.txt" "mavien_dreams.txt" "mavien_dialogue_other.txt" "mavien_dialogue.txt~" "mavien_dialogue.txt" "mavien_cutscenes.txt~" "mavien_cutscenes.txt" "mavien_characters.txt" "mavien_bugs.txt" "mavien_beginning_cutscene.txt" "mavien_audio.txt" "mavien_attribution.txt" "mavien_art_notes.txt" "mavien_art.txt" "mavien_ambience.txt" "mavien_alternate_opening.txt" "mavien_alternate_ending.txt" "mavien.txt" "mavien-trailer" "magnesium.org" "log.txt" "langs.org" "it.txt" "IT/" "improvements.txt" "improvements.org" "ideas.txt" "goodies.txt" "geography.txt" "game_ideas.txt" "fuck.txt" "english_oral_speech_plan.txt" "dialogue" "df" "d.txt" "csharp_notes.txt" "chem_revise" "chem_asdf.txt" "chemistry_syllabus.txt" "chem-sum-275.txt" "chem" "blade_todo.txt" "blade_document.txt" "art.txt" "alaska.txt" "8.19.2020.note.txt" "8.18.2020.note.txt" "#notes_september_26.txt#" "../" "./")
 
  ("d:/C_Programs/traveller/" (24809 10217 0 0) "zlib1.dll" "SDL2_ttf.dll" "SDL2_image.dll" "SDL2.dll" "res/" "main.c" "libwebp-7.dll" "libtiff-5.dll" "libpng16-16.dll" "libjpeg-9.dll" "libfreetype-6.dll" "ideas.txt" "c.bat" "a.exe" "../" "./")
 
@@ -89,11 +112,7 @@
 
  ("d:/school/" (24996 20393 0 0) "tests" "td_sdfsdfsdfsd" "td_portfolio_pg_9" "TD/" "shit/" "phys/" "math/" "L6/" "it/" "geo/" "F5/" "eng a/" "drawings/" "chem/" "bio/" "addmath/" "../" "./")
 
- ("d:/dev/tspc/" (25072 33388 0 0) "util.go" "tspc.exe" "terminal.go" "main.go" "go.sum" "go.mod" "consola.ttf" "c.bat" "../" "./")
-
  ("d:/Music/" (24420 14784 0 0) "Tracks/" "Templates/" "Samples/" "Orchestra Template.flp" "Music Tracks.zip" "Music Tracks/" "moonlight_sonata_3rd.mid" "moonlight_sonata.mid" "for_elise_by_beethoven.mid" "FamiTracker-v0.4.6/" "Fami Tracker loops/" "beethoven_opus10_3.mid" "Audio/" "../" "./")
-
- ("c:/Users/ameer/Desktop/" (25072 15512 0 0) "ShareX.lnk" "Screenshots/" "Random/" "points.png" "Old Firefox Data/" "New folder/" "Mail Merge.xlsx" "emacs daemon.bat" "desktop.ini" "chem_hw" "bring.txt" "blender/" "Ameer Ali - International Standards.docx" "Ameer Ali - Fire and FireFighting Portfolio Question.docx" "../" "./")
 
  ("c:/Users/ameer/.emacs.d/lisp/" (25070 49001 0 0) "xah-fly-keys.el~" "xah-fly-keys.el" "stdpipe.ps1" "intertial-scroll.el~" "intertial-scroll.el" "find-file-in-project.el" "elcord.el" "deferred.el~" "deferred.el" "../" "./")
 
@@ -111,15 +130,11 @@
 
  ("d:/C_Programs/" (24998 62199 0 0) "zlib1.dll" "weditor/" "vs/" "visualization/" "typer/" "tspace/" "traveller/" "tmacs/" "tinyplanet/" "timer/" "this is a test.txt" "tetris/" "tests/" "testing/" "test.c" "test/" "TAGS" "system/" "stw/" "stellosis/" "startree/" "spirit/" "space/" "snake/" "SDL2_ttf.dll" "SDL2_image.dll" "SDL2.dll" "scratch_buffer" "scratch/" "remove_comments/" "rain/" "quick/" "program.c" "prime/" "points/" "player/" "pi/" "perseverance/" "particles/" "nomad/" "new/" "net/" "nail/" "mp/" "moonspark/" "moon/" "model_viewer/" "message/" "mandelbrot/" "lunar/" "lucon.ttf" "lisp/" "libwebp-7.dll" "libtiff-5.dll" "libpng16-16.dll" "libjpeg-9.dll" "libfreetype-6.dll" "image_viewer/" "imageview/" "hireme/" "front/" "freight/" "frail/" "example/" "encrypt/" "dummy/" "DOOM-master/" "df/" "demo/" "debug/" "ctest/" "cpp/" "cour.ttf" "copy.bat~" "copy.bat" "consola.ttf" "compile_flags.txt" "combat/" "circle/" "CHIP-8/" "chess/" "calculator/" "c.bat" "c/" "bouncy.rar" "bouncy/" "bf/" "battery-report.html" "alaska/" "abs/" "a.exe" "../" "./")
 
- ("d:/Programs/Go/src/math/rand/" (25068 28146 0 0) "zipf.go" "rng.go" "regress_test.go" "rand_test.go" "rand.go" "race_test.go" "normal.go" "gen_cooked.go" "export_test.go" "exp.go" "example_test.go" "../" "./")
-
  ("c:/Users/ameer/go/bin/" (25068 11468 0 0) "gopls.exe~" "gopls.exe" "goimports.exe" "gogtags.exe" "godef.exe" "gocode.exe" "gdlv.exe" "dlv.exe" "../" "./")
 
  ("c:/Users/ameer/go/" (24941 25969 0 0) "pkg/" "bin/" "../" "./")
 
  ("d:/Programs/emacs/share/emacs/28.0.50/lisp/" (25068 16662 0 0) "xwidget.elc" "xwidget.el" "xt-mouse.elc" "xt-mouse.el" "xml.elc" "xml.el" "xdg.elc" "xdg.el" "x-dnd.elc" "x-dnd.el" "woman.elc" "woman.el" "winner.elc" "winner.el" "window.elc" "window.el" "windmove.elc" "windmove.el" "widget.elc" "widget.el" "wid-edit.elc" "wid-edit.el" "wid-browse.elc" "wid-browse.el" "whitespace.elc" "whitespace.el" "wdired.elc" "wdired.el" "w32-vars.elc" "w32-vars.el" "w32-fns.elc" "w32-fns.el" "vt100-led.elc" "vt100-led.el" "vt-control.elc" "vt-control.el" "view.elc" "view.el" "version.elc" "version.el" "vcursor.elc" "vcursor.el" "vc/" "userlock.elc" "userlock.el" "url/" "uniquify.elc" "uniquify.el" "type-break.elc" "type-break.el" "tutorial.elc" "tutorial.el" "tree-widget.elc" "tree-widget.el" "transient.elc" "transient.el" "tooltip.elc" "tooltip.el" "tool-bar.elc" "tool-bar.el" "tmm.elc" "tmm.el" "timezone.elc" "timezone.el" "time.elc" "time.el" "time-stamp.elc" "time-stamp.el" "thumbs.elc" "thumbs.el" "thread.elc" "thread.el" "thingatpt.elc" "thingatpt.el" "textmodes/" "term.elc" "term.el" "term/" "tempo.elc" "tempo.el" "tar-mode.elc" "tar-mode.el" "talk.elc" "talk.el" "tabify.elc" "tabify.el" "tab-line.elc" "tab-line.el" "tab-bar.elc" "tab-bar.el" "t-mouse.elc" "t-mouse.el" "svg.elc" "svg.el" "subr.elc" "subr.el" "subdirs.el" "strokes.elc" "strokes.el" "startup.elc" "startup.el" "speedbar.elc" "speedbar.el" "soundex.elc" "soundex.el" "sort.elc" "sort.el" "so-long.elc" "so-long.el" "skeleton.elc" "skeleton.el" "simple.elc" "simple.el" "shell.elc" "shell.el" "shadowfile.elc" "shadowfile.el" "ses.elc" "ses.el" "server.elc" "server.el" "select.elc" "select.el" "scroll-lock.elc" "scroll-lock.el" "scroll-bar.elc" "scroll-bar.el" "scroll-all.elc" "scroll-all.el" "saveplace.elc" "saveplace.el" "savehist.elc" "savehist.el" "ruler-mode.elc" "ruler-mode.el" "rtree.elc" "rtree.el" "rot13.elc" "rot13.el" "rfn-eshadow.elc" "rfn-eshadow.el" "reveal.elc" "reveal.el" "reposition.elc" "reposition.el" "replace.elc" "replace.el" "repeat.elc" "repeat.el" "registry.elc" "registry.el" "register.elc" "register.el" "rect.elc" "rect.el" "recentf.elc" "recentf.el" "README" "ps-samp.elc" "ps-samp.el" "ps-print.elc" "ps-print.el" "ps-print-loaddefs.el" "ps-mule.elc" "ps-mule.el" "ps-def.elc" "ps-def.el" "ps-bdf.elc" "ps-bdf.el" "progmodes/" "profiler.elc" "profiler.el" "proced.elc" "proced.el" "printing.elc" "printing.el" "plstore.elc" "plstore.el" "play/" "pixel-scroll.elc" "pixel-scroll.el" "pcomplete.elc" "pcomplete.el" "pcmpl-x.elc" "pcmpl-x.el" "pcmpl-unix.elc" "pcmpl-unix.el" "pcmpl-rpm.elc" "pcmpl-rpm.el" "pcmpl-linux.elc" "pcmpl-linux.el" "pcmpl-gnu.elc" "pcmpl-gnu.el" "pcmpl-cvs.elc" "pcmpl-cvs.el" "password-cache.elc" "password-cache.el" "paren.elc" "paren.el" "outline.elc" "outline.el" "org/" "obsolete/" "obarray.elc" "obarray.el" "nxml/" "novice.elc" "novice.el" "notifications.elc" "notifications.el" "newcomment.elc" "newcomment.el" "net/" "mwheel.elc" "mwheel.el" "msb.elc" "msb.el" "mpc.elc" "mpc.el" "mouse.elc" "mouse.el" "mouse-drag.elc" "mouse-drag.el" "mouse-copy.elc" "mouse-copy.el" "misearch.elc" "misearch.el" "misc.elc" "misc.el" "minibuffer.elc" "minibuffer.el" "minibuf-eldef.elc" "minibuf-eldef.el" "midnight.elc" "midnight.el" "mh-e/" "menu-bar.elc" "menu-bar.el" "md4.elc" "md4.el" "mb-depth.elc" "mb-depth.el" "master.elc" "master.el" "man.elc" "man.el" "makesum.elc" "makesum.el" "mail/" "macros.elc" "macros.el" "ls-lisp.elc" "ls-lisp.el" "lpr.elc" "lpr.el" "locate.elc" "locate.el" "loadup.el" "loadhist.elc" "loadhist.el" "loaddefs.el" "linum.elc" "linum.el" "leim/" "ldefs-boot.el" "language/" "kmacro.elc" "kmacro.el" "kermit.elc" "kermit.el" "jsonrpc.elc" "jsonrpc.el" "json.elc" "json.el" "jka-compr.elc" "jka-compr.el" "jka-cmpr-hook.elc" "jka-cmpr-hook.el" "jit-lock.elc" "jit-lock.el" "isearchb.elc" "isearchb.el" "isearch.elc" "isearch.el" "international/" "informat.elc" "informat.el" "info.elc" "info.el" "info-xref.elc" "info-xref.el" "info-look.elc" "info-look.el" "indent.elc" "indent.el" "imenu.elc" "imenu.el" "image.elc" "image.el" "image-mode.elc" "image-mode.el" "image-file.elc" "image-file.el" "image-dired.elc" "image-dired.el" "image/" "iimage.elc" "iimage.el" "ielm.elc" "ielm.el" "ido.elc" "ido.el" "icomplete.elc" "icomplete.el" "ibuffer.elc" "ibuffer.el" "ibuffer-loaddefs.el" "ibuf-macs.elc" "ibuf-macs.el" "ibuf-ext.elc" "ibuf-ext.el" "htmlfontify.elc" "htmlfontify.el" "htmlfontify-loaddefs.el" "hl-line.elc" "hl-line.el" "hippie-exp.elc" "hippie-exp.el" "hilit-chg.elc" "hilit-chg.el" "hi-lock.elc" "hi-lock.el" "hfy-cmap.elc" "hfy-cmap.el" "hexl.elc" "hexl.el" "hex-util.elc" "hex-util.el" "help.elc" "help.el" "help-mode.elc" "help-mode.el" "help-macro.elc" "help-macro.el" "help-fns.elc" "help-fns.el" "help-at-pt.elc" "help-at-pt.el" "gnus/" "generic-x.elc" "generic-x.el" "fringe.elc" "fringe.el" "frameset.elc" "frameset.el" "frame.elc" "frame.el" "forms.elc" "forms.el" "format.elc" "format.el" "format-spec.elc" "format-spec.el" "font-lock.elc" "font-lock.el" "font-core.elc" "font-core.el" "follow.elc" "follow.el" "foldout.elc" "foldout.el" "flow-ctrl.elc" "flow-ctrl.el" "finder.elc" "finder.el" "finder-inf.el" "find-lisp.elc" "find-lisp.el" "find-file.elc" "find-file.el" "find-dired.elc" "find-dired.el" "find-cmd.elc" "find-cmd.el" "filesets.elc" "filesets.el" "files.elc" "files.el" "files-x.elc" "files-x.el" "filenotify.elc" "filenotify.el" "fileloop.elc" "fileloop.el" "filecache.elc" "filecache.el" "ffap.elc" "ffap.el" "faces.elc" "faces.el" "facemenu.elc" "facemenu.el" "face-remap.elc" "face-remap.el" "ezimage.elc" "ezimage.el" "expand.elc" "expand.el" "eshell/" "erc/" "epg.elc" "epg.el" "epg-config.elc" "epg-config.el" "epa.elc" "epa.el" "epa-mail.elc" "epa-mail.el" "epa-ks.elc" "epa-ks.el" "epa-hook.elc" "epa-hook.el" "epa-file.elc" "epa-file.el" "epa-dired.elc" "epa-dired.el" "env.elc" "env.el" "emulation/" "emacs-lock.elc" "emacs-lock.el" "emacs-lisp/" "elide-head.elc" "elide-head.el" "electric.elc" "electric.el" "elec-pair.elc" "elec-pair.el" "ehelp.elc" "ehelp.el" "edmacro.elc" "edmacro.el" "ecomplete.elc" "ecomplete.el" "echistory.elc" "echistory.el" "ebuff-menu.elc" "ebuff-menu.el" "dynamic-setting.elc" "dynamic-setting.el" "double.elc" "double.el" "dos-w32.elc" "dos-w32.el" "dos-vars.elc" "dos-vars.el" "dos-fns.elc" "dos-fns.el" "dom.elc" "dom.el" "doc-view.elc" "doc-view.el" "dnd.elc" "dnd.el" "display-line-numbers.elc" "display-line-numbers.el" "display-fill-column-indicator.elc" "display-fill-column-indicator.el" "disp-table.elc" "disp-table.el" "dirtrack.elc" "dirtrack.el" "dired.elc" "dired.el" "dired-x.elc" "dired-x.el" "dired-loaddefs.el" "dired-aux.elc" "dired-aux.el" "dframe.elc" "dframe.el" "desktop.elc" "desktop.el" "descr-text.elc" "descr-text.el" "delsel.elc" "delsel.el" "delim-col.elc" "delim-col.el" "dabbrev.elc" "dabbrev.el" "custom.elc" "custom.el" "cus-theme.elc" "cus-theme.el" "cus-start.elc" "cus-start.el" "cus-load.el" "cus-face.elc" "cus-face.el" "cus-edit.elc" "cus-edit.el" "cus-dep.elc" "cus-dep.el" "COPYING" "composite.elc" "composite.el" "completion.elc" "completion.el" "comint.elc" "comint.el" "color.elc" "color.el" "cmuscheme.elc" "cmuscheme.el" "chistory.elc" "chistory.el" "char-fold.elc" "char-fold.el" "cedet/" "cdl.elc" "cdl.el" "case-table.elc" "case-table.el" "calendar/" "calculator.elc" "calculator.el" "calc/" "button.elc" "button.el" "buff-menu.elc" "buff-menu.el" "bs.elc" "bs.el" "bookmark.elc" "bookmark.el" "bindings.elc" "bindings.el" "battery.elc" "battery.el" "avoid.elc" "avoid.el" "autorevert.elc" "autorevert.el" "autoinsert.elc" "autoinsert.el" "autoarg.elc" "autoarg.el" "auth-source.elc" "auth-source.el" "auth-source-pass.elc" "auth-source-pass.el" "array.elc" "array.el" "arc-mode.elc" "arc-mode.el" "apropos.elc" "apropos.el" "ansi-color.elc" "ansi-color.el" "allout.elc" "allout.el" "allout-widgets.elc" "allout-widgets.el" "align.elc" "align.el" "abbrev.elc" "abbrev.el" "../" "./")
-
- ("d:/dev/GunBlade/" (24996 61240 0 0) "zlib1.dll" "util.go" "todo.txt" "res/" "player.go" "notes/" "note.txt" "main.go" "libpng16-16.dll" "guns.txt" "gungame.exe" "go.sum" "go.mod" "gamestates.go" "game.go" "entity.go" "enemy.go" "draw.go" "c.bat" "actions.go" ".git/" "../" "./")
 
  ("d:/dev/gun/" (24956 34968 0 0) "__debug_bin" "zlib1.dll" "util.go" "todo.txt" "res/" "player.go" "note.txt" "main.go" "libpng16-16.dll" "gungame.exe" "go.sum" "go.mod" "gamestates.go" "entities.go" "enemy.go" "draw.go" "c.bat" "actions.go" ".git/" "../" "./")
 
