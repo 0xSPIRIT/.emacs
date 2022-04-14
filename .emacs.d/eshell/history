@@ -1,39 +1,3 @@
-ls
-del main.exe
-rmdir /s quickstart
-del quickstart
-rm quickstart
-rmdir quickstart
-clera
-clear
-ls
-del main.exe
-rm main.exe
-ls
-pub
-dart main.dart 
-a
-a mandelbrot.b 
-cls
-clear
-a mandelbrot.b
-a helloword.bf 
-a helloword.bf 
-tcc
-tcc *.c
-a
-clear
-clear
-clear
-clear
-tcc *.c -ansi
-tcc *.c -std=c89
-tcc *.c -std=c89
-tcc *.c
-tcc
-tcc *.c -ID:\include\ -LD:\lib -llibSDL2.a
-tcc *.c -ID:\include\ -LD:\lib -llibSDL2
-exit
 tcc ex3.
 tcc ex3.c
 a
@@ -126,3 +90,39 @@ grep
 grep
 cmd
 vim
+dir
+ls
+cd d:/dev/alaska/
+dir
+ls
+cd src
+ls
+clear
+ls
+ls *.go
+ls -h
+ls -help
+ls --help
+ls -c
+ls -h
+ls 01
+ls -1
+clear
+ls -l
+ls --help
+ls -l
+cd ..
+dir
+ls
+cd bin
+ls -l
+alaska
+./alaska
+cd ..
+ls -
+ls -l
+type go.mod
+more go.mod
+cat go.mod
+quit
+exit
