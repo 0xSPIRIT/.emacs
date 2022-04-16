@@ -31,9 +31,6 @@
 (mini-frame-mode 1)
 (ivy-mode 1)
 
-;; Set mode line format
-(setq-default mode-line-format (remove 'mode-line-modes mode-line-format))
-
 ;; Ivy Mode
 (setq ivy-format-function 'ivy-format-function-line)
 
@@ -112,7 +109,7 @@
 (defun go-project-open-all-files(extension)
   (interactive (list (read-string "Extension: " (file-name-extension (buffer-file-name))))) ; Default value.
   (dired ".")                             ; Open Dired
-  (dired-mark-suffix extension)          ; Mark all appropriate source files.
+  (dired-mark-suffix extension)           ; Mark all appropriate source files.
   (setq dired-buffer-name (buffer-name))  ; Save the name of the dired buffer.
   (dired-do-find-marked-files 4)          ; Open all the marked files.
   (switch-to-buffer (concat "main." extension)) ; Switch to the main file.
@@ -282,7 +279,7 @@
    [default bold shadow italic underline bold bold-italic bold])
  '(ansi-color-names-vector
    ["#32302f" "#fb4933" "#98971a" "#d79921" "#458588" "#d3869b" "#689d6a" "#282828"])
- '(company-dabbrev-downcase 0)
+ '(company-dabbrev-downcase 0 t)
  '(company-idle-delay nil)
  '(company-minimum-prefix-length 2)
  '(company-quickhelp-color-background "#4F4F4F")
@@ -364,6 +361,7 @@
  '(smartrep-mode-line-active-bg (solarized-color-blend "#98971a" "#32302f" 0.2))
  '(term-default-bg-color "#282828")
  '(term-default-fg-color "#a89984")
+ '(tool-bar-mode nil)
  '(treemacs-fringe-indicator-mode t)
  '(vc-annotate-background nil)
  '(vc-annotate-background-mode nil)
