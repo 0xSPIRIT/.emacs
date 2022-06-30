@@ -1,16 +1,3 @@
-tcc ex3.
-tcc ex3.c
-a
-./a
-./a.exe
-exit
-ex3
-ex3 5
-ex3 10
-ex3 2
-type gamer.temp
-more gamer.temp
-a
 a
 dir
 ls
@@ -126,3 +113,16 @@ more go.mod
 cat go.mod
 quit
 exit
+dir
+ls
+cd bin
+sculpture
+./sculpture.exe 
+dir
+cd ../src
+ls
+type
+more
+more vectorizer.c
+help
+print vectorizer.c
