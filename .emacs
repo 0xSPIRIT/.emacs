@@ -1,3 +1,10 @@
+(require 'package)
+(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
+;; Comment/uncomment this line to enable MELPA Stable if desired.  See `package-archive-priorities`
+;; and `package-pinned-packages`. Most users will not need or want to do this.
+;;(add-to-list 'package-archives '("melpa-stable" . "https://stable.melpa.org/packages/") t)
+(package-initialize)
+
 ;; Set modes
 (menu-bar-mode 0)
 (tool-bar-mode 0)
@@ -5,13 +12,44 @@
 (electric-indent-mode 1)
 (delete-selection-mode 1)
 (show-paren-mode 1)
+(vertico-mode 1)
 (popwin-mode 1)
+(evil-mode 1)
 
+;; Undo Tree
+(with-eval-after-load 'undo-tree
+  (setq undo-tree-auto-save-history nil))
+
+;; Evil mode
+
+(global-undo-tree-mode)
+(evil-set-undo-system 'undo-tree)
+(define-key evil-normal-state-map (kbd "M-s") 'ace-jump-char-mode)
+(define-key evil-normal-state-map "s" 'ace-jump-mode)
+(define-key evil-normal-state-map (kbd "C-s") 'evil-substitute)
+(define-key evil-normal-state-map "R" 'string-rectangle)
+(define-key evil-normal-state-map (kbd "C-t") 'transpose-chars)
+
+(define-key evil-normal-state-map "e" 'save-buffer)
+(define-key evil-visual-state-map [tab] 'c-indent-line-or-region)
+(define-key evil-normal-state-map [tab] 'c-indent-line-or-region)
+(define-key evil-normal-state-map "m" 'back-to-indentation)
+(define-key evil-normal-state-map "go" 'ff-find-other-file)
+(define-key evil-normal-state-map "q" 'other-window)
+(define-key evil-normal-state-map "\M-f" 'find-file-other-window)
+(define-key evil-normal-state-map "K" 'kill-buffer)
+
+(define-key evil-insert-state-map (kbd "C-g") 'evil-normal-state)
+(define-key evil-insert-state-map (kbd "C-e") 'evil-normal-state)
+(define-key evil-visual-state-map (kbd "C-e") 'kevil-normal-state)
+
+(define-key evil-motion-state-map " " 'switch-to-buffer)
+(define-key evil-motion-state-map (kbd "C-SPC") 'find-file)
+ 
 ;; Scrolling
 (setq redisplay-dont-pause t)
 (setq mouse-wheel-progressive-speed nil)
 (setq mouse-wheel-follow-mouse t)
-(setq fast-but-imprecise-scrolling t)
 (setq auto-window-vscroll nil)
 (setq mouse-wheel-scroll-amount '(4 ((shift) . 4)))
 
@@ -19,7 +57,7 @@
 (add-hook 'text-mode-hook 'auto-fill-mode)
 
 (set-face-attribute 'default nil
-                    :family "Consolas"
+                    :family "DejaVu Sans Mono"
                     :height 110
                     :weight 'normal
                     :width 'normal)
@@ -28,9 +66,9 @@
 (push '(compilation-mode :height 15 :position bottom :noselect 1 :stick 1) popwin:special-display-config)
 
 ;; Miscelaneous Variables
-(setq c-basic-offset 4)
+(setq-default c-basic-offset 4)
 (setq-default tab-width 4)
-(setq indent-tabs-mode nil)
+(setq-default indent-tabs-mode nil)
 (setq compile-command "build.bat")
 (setq program "d:/dev/sculpture/bin/sculpture.exe")
 (setq fill-column 80)
@@ -38,6 +76,7 @@
 (setq vc-handled-backends nil)
 (setq frame-title-format (concat "%b - emacs"))
 (setq make-backup-files nil)
+(setq completion-styles '(substring basic))
 
 ;; Stop beeping.
 (setq visible-bell nil
@@ -102,21 +141,54 @@
   "Prompt user to enter a file name, with completion and history support."
   (interactive)
   (setq program (read-file-name "Enter executable: ")))
+;; Goodies
+(defun load-current-goodie()
+  "Loads a link on the current line in chrome's incognito mode"
+  (interactive)
+  (setq-local curr-line (buffer-substring-no-properties (line-beginning-position) (line-end-position)))
+  (setq-local goodie-command (concat "\"C:/Program Files/Google/Chrome/Application/chrome.exe\" -incognito " curr-line))
+  (shell-command goodie-command))
+(defun load-selected-goodies()
+  "Loads all the link in the region in chrome's incognito mode"
+  (interactive)
+  (setq-local list (buffer-substring (mark) (point)))
+  (setq-local list (split-string list "\n"))
+  (setq-local list (butlast list)) ; Remove the last element of the list, which is empty.
+  (setq-local links "")
+  (while list
+	(setq-local links (concat links (car list) " "))
+    (setq-local list (cdr list)))
+  (setq-local goodie-command (concat "\"C:/Program Files/Google/Chrome/Application/chrome.exe\" -incognito " links))
+  (message goodie-command)
+  (shell-command goodie-command))
+(defun load-goodie()
+  "Loads all the link in the region OR loads the link on the current line in chrome's incognito mode"
+  (interactive)
+  (if (use-region-p) (load-selected-goodies) (load-current-goodie)))
+(defun load-goodie-file()
+  (interactive)
+  (find-file "D:/Notes/goodies.txt"))
+(defun c-print()
+  (interactive)
+  (insert "printf(\"\\n\"); fflush(stdout);")
+  (back-to-indentation)
+  (forward-char 8)
+)
 
-(global-set-key (kbd "C-z") 'undo)
+(define-key evil-normal-state-map (kbd "C-.") 'imenu-anywhere)
 
-(global-set-key (kbd "C-c C-c") 'comment-or-uncomment-region)
-(global-set-key (kbd "C-c C-j") 'eval-last-sexp)
-(global-set-key (kbd "C-c j") 'eval-region)
+(global-set-key (kbd "C-c p") 'c-print)
+
+(global-set-key [f4] 'load-goodie)
+(global-set-key [C-f4] 'load-goodie-file)
+
+(global-set-key (kbd "C-;") 'dabbrev-expand)
+(define-key minibuffer-local-map (kbd "C-;") 'dabbrev-expand)
+
 (global-set-key (kbd "C-c o") 'project-open-all-files)
-(global-set-key [C-f11] 'toggle-frame-fullscreen)
-(global-set-key (kbd "C-<backspace>") 'backward-delete-word)
-(global-set-key (kbd "M-d") 'forward-delete-word)
 (global-set-key (kbd "C-c u") 'helm-multi-swoop-current-mode)
 (global-set-key (kbd "C-c h") 'helm-occur)
 (global-set-key (kbd "M-o") 'center-line)
-(global-set-key (kbd "C-z") 'undo)
-(global-set-key (kbd "C-y") 'yank)
 (global-set-key (kbd "M-g") 'goto-line)
 (global-set-key [f8] 'goto-init-file)
 (global-set-key [M-f8] 'reload-init-file)
@@ -134,19 +206,14 @@
 (global-set-key (kbd "M-n") 'move-text-line-down)
 (global-set-key [M-up] 'move-text-line-up)
 (global-set-key [M-down] 'move-text-line-down)
-(global-set-key (kbd "<M-mouse-2>") 'mouse-buffer-menu)
 (global-set-key (kbd "C-c C-s") 'fill-region)
 (global-set-key (kbd "C-=") 'quick-calc)
 (global-set-key (kbd "M-:") 'first-error)
 (global-set-key (kbd "M-}") 'next-error)
 (global-set-key (kbd "M-{") 'previous-error)
 (global-set-key (kbd "<C-tab>") 'mode-line-other-buffer)
-(global-set-key (kbd "C-S-d") 'kill-whole-line)
-(global-set-key (kbd "<C-return>") 'insert-line-above)
-(global-set-key (kbd "<C-S-return>") 'insert-line-below)
-(global-set-key (kbd "M-s") 'window-swap-states)
+(global-set-key (kbd "C-M-s") 'window-swap-states)
 (global-set-key (kbd "C-S-k") 'kill-current-buffer)
-(global-set-key (kbd "M-j") 'ff-find-other-file)
 (global-set-key (kbd "M-k") 'mark-whole-buffer)
 (global-set-key (kbd "C-S-y") 'indent-region)
 (global-set-key (kbd "M-y") 'yank-pop)
@@ -155,14 +222,28 @@
 (global-set-key (kbd "M-q") 'query-replace)
 (global-set-key (kbd "C-M-q") 'replace-regexp)
 (global-set-key (kbd "C-M-S-q") 'query-replace-regexp)
-(global-set-key (kbd "C-S-p") 'backward-paragraph)
-(global-set-key (kbd "C-S-n") 'forward-paragraph)
-(global-set-key (kbd "C-S-f") 'forward-sexp)
-(global-set-key (kbd "C-S-b") 'backward-sexp)
-(global-set-key (kbd "C-o") 'find-file)
-(global-set-key (kbd "C-u") 'other-window)
 (global-set-key (kbd "M-e") 'delete-window)
 (global-set-key (kbd "M-a") 'delete-other-windows)
 (global-set-key (kbd "M-h") 'split-window-horizontally)
-(global-set-key (kbd "C-S-j") 'helm-imenu-anywhere)
-(global-set-key (kbd "C-j") 'helm-imenu)
+(global-set-key (kbd "C-j") 'imenu)
+(global-set-key (kbd "C-S-j") 'imenu-anywhere)
+
+(put 'upcase-region 'disabled nil)
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(avy-enter-times-out t)
+ '(custom-safe-themes
+   '("040c4d3a34e15b2a095247301ec7b5227417d7422c10a12145ad57b53dbc43c6" "003f1ec564814ba4c0bbf918a392cd32171a462cc13100ac3e383ddb31437d19" "e97291d5d27a6e03d884a2e460ba6eb743ed37e85d9b013d54895093d9aa3638" default))
+ '(evil-undo-system 'undo-tree)
+ '(package-selected-packages
+   '(gtags-mode helm-core helm undo-tree ac-etags ace-jump-mode consult yasnippet-snippets which-key waher-theme vterm vertico use-package-hydra tramp-theme swiper spaceline selectrum rustic rust-mode rtags ripgrep project-explorer popwin naysayer-theme nano-theme multiple-cursors move-text mini-frame magit lush-theme lsp-ui lsp-dart lab-themes key-chord json-mode jazz-theme irony imenu-anywhere iedit hover helm-xref helm-swoop helm-lsp helm-gtags good-scroll god-mode go-rename go-eldoc go-dlv go-complete go-autocomplete glsl-mode ggtags frame-local flycheck-golangci-lint evil-visual-mark-mode esup dumb-jump csharp-mode crux company-c-headers clues-theme cloc chess ccls c-eldoc bury-successful-compilation bongo basic-theme anzu almost-mono-themes))
+ '(warning-suppress-types '((comp))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(avy-goto-char-timer-face ((t (:background "pink" :foreground "black" :weight bold)))))

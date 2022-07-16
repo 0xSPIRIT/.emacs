@@ -1,0 +1,2 @@
+;; Generated package description from gtags-mode.el  -*- no-byte-compile: t -*-
+(define-package "gtags-mode" "1.0" "GNU Global integration with xref, project and imenu." '((emacs "28")) :commit "f108a46c6c03eb5e18c73a908c655071aa153a14" :authors '(("Jimmy Aguilar Mena")) :maintainer '("Jimmy Aguilar Mena") :keywords '("xref" "project" "imenu" "gtags" "global") :url "https://github.com/Ergus/gtags-mode")

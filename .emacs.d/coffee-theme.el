@@ -11,7 +11,7 @@
  '(font-lock-comment-face ((t (:foreground "#a38f7d"))))
  '(font-lock-function-name-face ((t (:foreground "#a99865" ))))
  '(font-lock-keyword-face ((t (:foreground "#db963d" ))))
- '(font-lock-string-face ((t (:foreground "#6d7c5d" ))))
+ '(font-lock-string-face ((t (:foreground "#d3ad54" ))))
  '(font-lock-type-face ((t (:foreground "#af9849" ))))
  '(font-lock-constant-face ((t (:foreground "#bbaa97" ))))
  '(font-lock-variable-name-face ((t (:foreground "#abb780" ))))
