@@ -1,0 +1,10 @@
+;; Object semanticdb-project-database-file-4e9fe69c88
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-4e9fe69c88"
+  :tables
+  (list
+
+)
+  :file "!drive_d!dev!sculpture!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,39 @@
+;; Object semanticdb-project-database-file-9befc31c60
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-9befc31c60"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-9befc31cac"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("windows.h" include (:system-flag t) nil [20 40])
+            ("strsafe.h" include (:system-flag t) nil [41 61])
+            ("TITLE_SIZE" variable (:constant-flag t) nil [71 81])
+            ("MAX_WINDOWS" variable (:constant-flag t) nil [95 106])
+            ("ErrorExit" function
+               (:arguments 
+                  ( ("lpszFunction" variable (:type ("LPTSTR" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [127 147]))                  
+                :type "void")
+                nil [112 1083])
+            ("WinMain" function
+               (:arguments 
+                  ( ("hInstance" variable (:type ("HINSTANCE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1103 1123])
+                    ("hPrevInstance" variable (:type ("HINSTANCE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1132 1156])
+                    ("lpCmdLine" variable (:type ("PSTR" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1165 1180])
+                    ("nCmdShow" variable (:type ("INT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1189 1202]))                  
+                :type ("WINAPI" type (:type "class") nil nil))
+                nil [1088 1832]))          
+      :file "main.c"
+      :pointmax 1833
+      :fsize 1902
+      :lastmodtime '(25334 19408 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("MAX_WINDOWS" . ((number "512" 107 . 110)))
+          ("TITLE_SIZE" . ((number "1024" 82 . 86)))
+          )
+))
+  :file "!drive_d!dev!switcher!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

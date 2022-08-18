@@ -1,0 +1,51 @@
+;; Object semanticdb-project-database-file-8aa3cf359c
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-8aa3cf359c"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-8aa38c0508"
+      :major-mode c-mode
+      :tags 
+        '( ("MAX_VALUE" variable (:constant-flag t) nil [9 18])
+            ("stdlib.h" include (:system-flag t) nil [25 44])
+            ("stdio.h" include (:system-flag t) nil [45 63])
+            ("comp" function
+               (:arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [74 88])
+                    ("b" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [89 103]))                  
+                :type "int")
+                nil [65 187])
+            ("findMedianSortedArrays" function
+               (:arguments 
+                  ( ("nums1" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [219 230])
+                    ("nums1Size" variable (:type "int") (reparse-symbol arg-sub-list) [231 245])
+                    ("nums2" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [246 257])
+                    ("nums2Size" variable (:type "int") (reparse-symbol arg-sub-list) [258 272]))                  
+                :type "double")
+                nil [189 871]))          
+      :file "solution.c"
+      :pointmax 872
+      :fsize 907
+      :lastmodtime '(25334 60104 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("MAX_VALUE" . ((number "1000" 19 . 23)))
+          )
+))
+  :file "!drive_c!Users!ameer!sol!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

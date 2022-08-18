@@ -1,0 +1,45 @@
+;; Object semanticdb-project-database-file-6c13c84af4
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-6c13c84af4"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-6c12a314e8"
+      :major-mode c-mode
+      :tags 
+        '( ("blob_surface_flood_fill" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("x" variable (:type "int") (reparse-symbol arg-sub-list) [61 67])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [68 74])
+                    ("current" variable (:type ("Uint32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [75 90])
+                    ("object_index" variable (:type "int") (reparse-symbol arg-sub-list) [91 108])
+                    ("surf" variable
+                       (:pointer 1
+                        :type ("SDL_Surface" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [109 127])
+                    ("chisel_size" variable (:type "int") (reparse-symbol arg-sub-list) [128 144])
+                    ("blob_count" variable (:type ("Uint32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [145 163]))                  
+                :type "int")
+                nil [26 1336])
+            ("blob_set_shape_from_surface" function
+               (:arguments 
+                  ( ("object_index" variable (:type "int") (reparse-symbol arg-sub-list) [1480 1497])
+                    ("surf" variable
+                       (:pointer 1
+                        :type ("SDL_Surface" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1498 1516])
+                    ("chisel_size" variable (:type "int") (reparse-symbol arg-sub-list) [1517 1533])
+                    ("blob_count" variable
+                       (:pointer 1
+                        :type ("Uint32" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1534 1553]))                  
+                :type "void")
+                nil [1447 3551]))          
+      :file "deleted_code.c"
+      :pointmax 3553
+      :fsize 3664
+      :lastmodtime '(25342 12809 0 0)
+      :unmatched-syntax nil))
+  :file "!drive_d!dev!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

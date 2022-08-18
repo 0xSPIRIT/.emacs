@@ -1,76 +1,292 @@
-;; Object semanticdb-project-database-file-19b9438
+;; Object semanticdb-project-database-file-780c540a08
 ;; SEMANTICDB Tags save file
-(semanticdb-project-database-file "semanticdb-project-database-file-19b9438"
+(semanticdb-project-database-file "semanticdb-project-database-file-780c540a08"
   :tables
   (list
-    (semanticdb-table "semanticdb-table-19ba35c"
+    (semanticdb-table "semanticdb-table-780c26c96c"
       :major-mode c-mode
       :tags 
-        '( ("stdio.h" include (:system-flag t) nil [1 19])
-            ("MEMORY_SIZE" variable (:constant-flag t) nil [69 80])
-            ("stdlib.h" include (:system-flag t) nil [20 39])
-            ("MEMORY_SIZE" variable (:constant-flag t) nil [69 80])
-            ("stdlib.h" include (:system-flag t) nil [20 39])
-            ("string.h" include (:system-flag t) nil [40 59])
-            ("MEMORY_SIZE" variable (:constant-flag t) nil [69 80])
-            ("W" variable (:constant-flag t) nil [95 96])
-            ("H" variable (:constant-flag t) nil [109 110])
-            ("u8" type
-               (:typedef ("unsigned char")
-                :type "typedef")
-                nil [116 141])
-            ("u16" type
-               (:typedef ("unsigned short")
-                :type "typedef")
-                nil [142 169])
-            ("memory" variable
-               (:dereference 1
-                :type ("u8" type (:type "class") nil nil))
-                nil [171 194])
-            ("pc" variable (:type ("u16" type (:type "class") nil nil)) nil [195 202])
-            ("opcode" variable (:type ("u16" type (:type "class") nil nil)) nil [203 214])
-            ("graphics" variable
-               (:dereference 1
-                :type ("u8" type (:type "class") nil nil))
-                nil [216 233])
+        '( ("stdio.h" include
+               (:system-flag t
+                :truefile "c:/Users/ameer/asdf.c")
+                nil [1 19])
+            ("Test" type
+               (:members 
+                  ( ("str" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [36 46])
+                    ("time_current" variable (:type "float") (reparse-symbol classsubparts) [48 77])
+                    ("time_max" variable (:type "float") (reparse-symbol classsubparts) [48 77]))                  
+                :type "struct"
+                :truefile "c:/Users/ameer/asdf.c")
+                nil [21 80])
             ("main" function
                (:arguments 
-                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [244 253])
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [91 96]))                  
+                :type "int"
+                :truefile "c:/Users/ameer/asdf.c")
+                nil [82 139]))          
+      :file "asdf.c"
+      :pointmax 140
+      :fsize 150
+      :lastmodtime '(25286 20705 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-780c26c98c"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include
+               (:system-flag t
+                :truefile "c:/Users/ameer/new_thing.c")
+                nil [1 19])
+            ("x" variable
+               (:type "int"
+                :truefile "c:/Users/ameer/new_thing.c")
+                nil [21 33])
+            ("y" variable
+               (:type "int"
+                :truefile "c:/Users/ameer/new_thing.c")
+                nil [21 33])
+            ("z" variable
+               (:type "int"
+                :truefile "c:/Users/ameer/new_thing.c")
+                nil [21 33])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [44 53])
                     ("argv" variable
                        (:pointer 2
                         :type "char")
-                        (reparse-symbol arg-sub-list) [254 266]))                  
-                :type "int")
-                nil [235 308]))          
-      :file "scratch.c"
-      :pointmax 309
-      :fsize 329
-      :lastmodtime '(24698 17014 0 0)
-      :unmatched-syntax nil
-      :lexical-table 
-        '(("MEMORY_SIZE" . ((number "4096" 81 . 85)))
-          ("H" . ((number "360" 71 . 74)))
-          ("W" . ((number "640" 57 . 60)))
-          )
-)
-    (semanticdb-table "semanticdb-table-28bde84"
+                        (reparse-symbol arg-sub-list) [54 66]))                  
+                :type "int"
+                :truefile "c:/Users/ameer/new_thing.c")
+                nil [35 238]))          
+      :file "new_thing.c"
+      :pointmax 239
+      :fsize 254
+      :lastmodtime '(25330 41119 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-780c61d97c"
       :major-mode c-mode
       :tags 
-        '( ("stdio.h" include (:system-flag t) nil [1 19])
-            ("stdlib.h" include (:system-flag t) nil [20 39])
+        '( ("stdio.h" include
+               (:system-flag t
+                :truefile "c:/Users/ameer/other.c")
+                nil [1 19])
             ("main" function
                (:arguments 
-                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [50 59])
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [30 35]))                  
+                :type "int"
+                :truefile "c:/Users/ameer/other.c")
+                nil [21 38]))          
+      :file "other.c"
+      :pointmax 38
+      :fsize 40
+      :lastmodtime '(25293 51860 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-780c61d99c"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include
+               (:system-flag t
+                :truefile "c:/Users/ameer/output.c")
+                nil [1 19])
+            ("stdlib.h" include
+               (:system-flag t
+                :truefile "c:/Users/ameer/output.c")
+                nil [20 39])
+            ("Entity" type
+               (:members 
+                  ( ("str" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [58 68])
+                    ("len" variable (:type "int") (reparse-symbol classsubparts) [70 83])
+                    ("cap" variable (:type "int") (reparse-symbol classsubparts) [70 83])
+                    ("do_something" variable (:type "int") (reparse-symbol classsubparts) [85 102])
+                    ("time_current" variable (:type "int") (reparse-symbol classsubparts) [104 131])
+                    ("time_max" variable (:type "int") (reparse-symbol classsubparts) [104 131]))                  
+                :type "struct"
+                :truefile "c:/Users/ameer/output.c")
+                nil [41 134])
+            ("main" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [145 150]))                  
+                :type "int"
+                :truefile "c:/Users/ameer/output.c")
+                nil [136 205]))          
+      :file "output.c"
+      :pointmax 206
+      :fsize 220
+      :lastmodtime '(25284 45626 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-780c61f25c"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include
+               (:truefile "c:/Users/ameer/random_stuff.c"
+                :system-flag t)
+                nil [1 19])
+            ("stdlib.h" include
+               (:truefile "c:/Users/ameer/random_stuff.c"
+                :system-flag t)
+                nil [20 39])
+            ("random_stuff.h" include (:truefile "c:/Users/ameer/random_stuff.c") nil [41 66])
+            ("main" function
+               (:truefile "c:/Users/ameer/random_stuff.c"
+                :type "int"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [77 82]))                  )
+                nil [68 203]))          
+      :file "random_stuff.c"
+      :pointmax 204
+      :fsize 214
+      :lastmodtime '(25334 20085 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-780c61f27c"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include
+               (:system-flag t
+                :truefile "c:/Users/ameer/something_else.c")
+                nil [1 19])
+            ("allocate" variable
+               (:constant-flag t
+                :truefile "c:/Users/ameer/something_else.c")
+                nil [29 37])
+            ("Entity" type
+               (:members 
+                  ( ("str" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [91 101])
+                    ("len" variable (:type "int") (reparse-symbol classsubparts) [106 119])
+                    ("cap" variable (:type "int") (reparse-symbol classsubparts) [106 119]))                  
+                :type "struct"
+                :truefile "c:/Users/ameer/something_else.c")
+                nil [71 122])
+            ("print_entity" function
+               (:arguments 
+                  ( ("e" variable
+                       (:pointer 1
+                        :type ("Entity" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [142 159]))                  
+                :type "void"
+                :truefile "c:/Users/ameer/something_else.c")
+                nil [124 239])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [250 259])
                     ("argv" variable
                        (:pointer 2
                         :type "char")
-                        (reparse-symbol arg-sub-list) [60 72]))                  
-                :type "int")
-                nil [41 121]))          
-      :file "scratch_stuff.c"
-      :pointmax 122
-      :fsize 128
-      :lastmodtime '(24698 16864 0 0)
+                        (reparse-symbol arg-sub-list) [260 272]))                  
+                :type "int"
+                :truefile "c:/Users/ameer/something_else.c")
+                nil [241 440]))          
+      :file "something_else.c"
+      :pointmax 441
+      :fsize 463
+      :lastmodtime '(25316 57081 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-780c5db3f4"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include
+               (:system-flag t
+                :truefile "c:/Users/ameer/test.c")
+                nil [1 19])
+            ("x" variable
+               (:type "int"
+                :truefile "c:/Users/ameer/test.c")
+                nil [21 33])
+            ("y" variable
+               (:type "int"
+                :truefile "c:/Users/ameer/test.c")
+                nil [21 33])
+            ("z" variable
+               (:type "int"
+                :truefile "c:/Users/ameer/test.c")
+                nil [21 33])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [44 53])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [54 66]))                  
+                :type "int"
+                :truefile "c:/Users/ameer/test.c")
+                nil [35 109]))          
+      :file "test.c"
+      :pointmax 110
+      :fsize 117
+      :lastmodtime '(25304 30597 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-780c5db414"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include
+               (:system-flag t
+                :truefile "c:/Users/ameer/weird.c")
+                nil [1 19])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [81 90])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [91 103]))                  
+                :type "int"
+                :truefile "c:/Users/ameer/weird.c")
+                nil [72 222]))          
+      :file "weird.c"
+      :pointmax 222
+      :fsize 234
+      :lastmodtime '(25330 37948 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-780c620e34"
+      :major-mode c-mode
+      :tags 
+        '( ("stdbool.h" include
+               (:truefile "c:/Users/ameer/solution.c"
+                :system-flag t)
+                nil [1 21])
+            ("NUMERAL_COUNT" variable
+               (:truefile "c:/Users/ameer/solution.c"
+                :constant-flag t)
+                nil [31 44])
+            ("table" variable
+               (:truefile "c:/Users/ameer/solution.c"
+                :type "int"
+                :default-value "{
+    'I', 1,
+    'V', 5,
+    'X', 10,
+    'L', 50,
+    'C', 100,
+    'D', 500,
+    'M', 1000
+}"
+                :constant-flag t
+                :dereference 1)
+                nil [48 179])
+            ("romanToInt" function
+               (:truefile "c:/Users/ameer/solution.c"
+                :type "int"
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [196 204]))                  )
+                nil [181 785]))          
+      :file "solution.c"
+      :pointmax 786
+      :fsize 825
+      :lastmodtime '(25334 58603 0 0)
       :unmatched-syntax nil))
   :file "!drive_c!Users!ameer!semantic.cache"
   :semantic-tag-version "2.0"

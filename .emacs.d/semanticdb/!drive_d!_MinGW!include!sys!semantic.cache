@@ -1,0 +1,129 @@
+;; Object semanticdb-project-database-file-7ac125f584
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-7ac125f584"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-7ac125f5c0"
+      :major-mode c-mode
+      :tags 
+        '( ("_mingw.h" include (:system-flag t) nil [1511 1530])
+            ("_SYS_TYPES_H" variable (:constant-flag t) nil [1961 1973])
+            ("__off32_t" type
+               (:typedef ("__int32" type (:type "class") nil nil)
+                :type "typedef")
+                nil [2334 2361])
+            ("_off_t" type
+               (:typedef ("__off32_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [2497 2523])
+            ("off_t" type
+               (:typedef ("_off_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [2822 2844])
+            ("__have_typedef_off_t" variable (:constant-flag t) nil [3006 3026])
+            ("__off64_t" type
+               (:typedef ("__int64" type (:type "class") nil nil)
+                :type "typedef")
+                nil [3289 3316])
+            ("off64_t" type
+               (:typedef ("__off64_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [3513 3540])
+            ("__have_typedef___off64_t" variable (:constant-flag t) nil [3703 3727])
+            ("_ssize_t" type
+               (:typedef ("int")
+                :type "typedef")
+                nil [3980 4002])
+            ("ssize_t" type
+               (:typedef ("_ssize_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [4301 4327])
+            ("__have_typedef_ssize_t" variable (:constant-flag t) nil [4489 4511])
+            ("__time32_t" type
+               (:typedef ("__int32" type (:type "class") nil nil)
+                :type "typedef")
+                nil [4770 4797])
+            ("__time64_t" type
+               (:typedef ("__int64" type (:type "class") nil nil)
+                :type "typedef")
+                nil [4832 4859])
+            ("time_t" type
+               (:typedef ("__time64_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [5389 5415])
+            ("__have_typedef_time_t" variable (:constant-flag t) nil [5572 5593])
+            ("__need_size_t" variable (:constant-flag t) nil [5862 5875])
+            ("__need_ptrdiff_t" variable (:constant-flag t) nil [5884 5900])
+            ("__need_wchar_t" variable (:constant-flag t) nil [5909 5923])
+            ("stddef.h" include (:system-flag t) nil [5924 5943])
+            ("_dev_t" type
+               (:typedef ("short")
+                :type "typedef")
+                nil [6350 6372])
+            ("_ino_t" type
+               (:typedef ("short")
+                :type "typedef")
+                nil [6503 6525])
+            ("_mode_t" type
+               (:typedef ("unsigned short")
+                :type "typedef")
+                nil [6526 6557])
+            ("_pid_t" type
+               (:typedef ("int")
+                :type "typedef")
+                nil [6558 6578])
+            ("_sigset_t" type
+               (:typedef ("int")
+                :type "typedef")
+                nil [6579 6602])
+            ("dev_t" type
+               (:typedef ("_dev_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [6897 6920])
+            ("ino_t" type
+               (:typedef ("_ino_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [6921 6944])
+            ("mode_t" type
+               (:typedef ("_mode_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [6945 6970])
+            ("pid_t" type
+               (:typedef ("_pid_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [6971 6994])
+            ("sigset_t" type
+               (:typedef ("_sigset_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [6995 7023])
+            ("fpos64_t" type
+               (:typedef ("__int64" type (:type "class") nil nil)
+                :type "typedef")
+                nil [7032 7059]))          
+      :file "types.h"
+      :pointmax 7455
+      :fsize 7454
+      :lastmodtime '(24092 54253 0 0)
+      :unmatched-syntax '((semantic-list 4592 . 4641) (punctuation 4590 . 4591) (punctuation 4589 . 4590) (semantic-list 3811 . 3861) (punctuation 3809 . 3810) (punctuation 3808 . 3809) (semantic-list 3108 . 3160) (punctuation 3106 . 3107) (punctuation 3105 . 3106) (semantic-list 2164 . 2212) (punctuation 2162 . 2163) (punctuation 2161 . 2162) (symbol 1813 . 1826) (symbol 1805 . 1812) (punctuation 1803 . 1804) (punctuation 1801 . 1802) (punctuation 1800 . 1801) (symbol 1785 . 1799) (symbol 1777 . 1784) (punctuation 1775 . 1776) (punctuation 1773 . 1774) (punctuation 1772 . 1773) (symbol 1454 . 1467) (symbol 1450 . 1453) (symbol 1443 . 1449) (punctuation 1442 . 1443))
+      :lexical-table 
+        '(("_SYS_TYPES_H")
+          ("__have_typedef___off64_t")
+          ("__have_typedef_off_t")
+          ("__have_typedef_ssize_t")
+          ("__need_wchar_t")
+          ("__have_typedef_time_t" . ((number "1" 5595 . 5596)))
+          ("__need_size_t")
+          ("__need_ptrdiff_t")
+          )
+)
+    (semanticdb-table "semanticdb-table-7ac1183234"
+      :file "time.h"
+      :fsize 4600
+      :lastmodtime '(24092 54253 0 0))
+    (semanticdb-table "semanticdb-table-7ac11832a4"
+      :file "unistd.h"
+      :fsize 106
+      :lastmodtime '(24092 54253 0 0)))
+  :file "!drive_d!_MinGW!include!sys!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

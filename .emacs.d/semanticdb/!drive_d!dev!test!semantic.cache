@@ -1,0 +1,77 @@
+;; Object semanticdb-project-database-file-9658647df4
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-9658647df4"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-9658647db4"
+      :major-mode c-mode
+      :tags 
+        '( ("stdbool.h" include (:system-flag t) nil [1 21])
+            ("SDL_MAIN_HANDLED" variable (:constant-flag t) nil [31 47])
+            ("SDL2/SDL.h" include (:system-flag t) nil [48 69])
+            ("grid.h" include nil nil [71 88])
+            ("window_width" variable
+               (:constant-flag t
+                :default-value "640"
+                :type "int")
+                nil [90 119])
+            ("window_height" variable
+               (:constant-flag t
+                :default-value "360"
+                :type "int")
+                nil [120 150])
+            ("main" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [161 166]))                  
+                :type "int")
+                nil [152 1226]))          
+      :file "main.c"
+      :pointmax 1227
+      :fsize 1278
+      :lastmodtime '(25330 47142 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("SDL_MAIN_HANDLED")
+          )
+)
+    (semanticdb-table "semanticdb-table-9658647dd4"
+      :file "grid.h"
+      :fsize 311
+      :lastmodtime '(25330 46985 0 0))
+    (semanticdb-table "semanticdb-table-96586498cc"
+      :major-mode c-mode
+      :tags 
+        '( ("grid.h" include nil nil [1 18])
+            ("time.h" include (:system-flag t) nil [20 37])
+            ("tiles" variable
+               (:pointer 2
+                :type ("Tile" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [39 59])
+            ("gw" variable (:type "int") nil [60 71])
+            ("gh" variable (:type "int") nil [60 71])
+            ("grid_init" function
+               (:arguments 
+                  ( ("w" variable (:type "int") (reparse-symbol arg-sub-list) [88 94])
+                    ("h" variable (:type "int") (reparse-symbol arg-sub-list) [95 101]))                  
+                :type "void")
+                nil [73 371])
+            ("grid_free" function (:type "void") nil [373 410])
+            ("grid_draw" function
+               (:arguments 
+                  ( ("renderer" variable
+                       (:pointer 1
+                        :type ("SDL_Renderer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [427 450]))                  
+                :type "void")
+                nil [412 877]))          
+      :file "grid.c"
+      :pointmax 878
+      :fsize 917
+      :lastmodtime '(25330 54505 0 0)
+      :unmatched-syntax nil))
+  :file "!drive_d!dev!test!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
